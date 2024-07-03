@@ -11,20 +11,20 @@
 
   <!-- netflics icon -->
   <div style="display: flex; position: relative; width: fit-content;">
-  <img style="margin-right: 10px;" src="assets/icon_netflics.svg">
+  <img style="margin-right: 10px; align-self: center;" src="assets/icon_netflics.svg">
   <p style="font-weight: bold; font-size: 23px; color: #2F88FF;">netflics</p>
   </div>
 
 <div style="display: flex;">
   <!-- nav buttons-->
   <div class="nav-buttons">
-    <div class="btn" tabindex="1">
+    <div routerLink="/home" class="btn" tabindex="1">
       <p>Inicio</p>
     </div>
     <div class="btn" tabindex="2">
       <p>Buscar películas o series</p>
     </div>
-    <div mat-raised-button matBadge="1" matBadgePosition="above after" class="btn btn-notificaciones" tabindex="3">
+    <div routerLink="/novedades" mat-raised-button matBadge="1" matBadgePosition="above after" class="btn btn-notificaciones" tabindex="3">
       <p 
       >Notificaciones</p>
     </div>
@@ -36,8 +36,6 @@
   </div>
 
 </div>
-
-<!-- <app-nav-bar></app-nav-bar> -->
 
 </body>
 </html>
