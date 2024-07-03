@@ -4,12 +4,30 @@
     height: fit-content;
 }
 
+.icon-netflics {
+    display: flex;
+    padding-top: 10px;
+    width: fit-content;
+}
+
+.icon-netflics p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 23px;
+    color: #2F88FF;
+}
+
+.image-icon-netflics {
+    margin-right: 4px; 
+    align-self: center;
+}
+
 .btn {
     align-self: center;
     display: grid;
     margin: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     padding-left: 30px;
     padding-right: 30px;
     height: 35px;
@@ -64,11 +82,13 @@
     /* background-color: red; */
     margin: 0;
     margin-right: 10px;
-    top: 8px;
+    top: 11px;
     right: 0;
 }
 
 .mi-cuenta p {
+    align-self: center;
+    margin: 0;
     margin-right: 10px;
 }
 
