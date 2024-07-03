@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="nav-bar.component.css">
+</head>
+<body>
+
+
+  <!-- netflics icon -->
+  <div style="display: flex; position: relative; width: fit-content;">
+  <img style="margin-right: 10px;" src="assets/icon_netflics.svg">
+  <p style="font-weight: bold; font-size: 23px; color: #2F88FF;">netflics</p>
+  </div>
+
+<div style="display: flex;">
+  <!-- nav buttons-->
+  <div class="nav-buttons">
+    <div class="btn" tabindex="1">
+      <p>Inicio</p>
+    </div>
+    <div class="btn" tabindex="2">
+      <p>Buscar películas o series</p>
+    </div>
+    <div mat-raised-button matBadge="1" matBadgePosition="above after" class="btn btn-notificaciones" tabindex="3">
+      <p 
+      >Notificaciones</p>
+    </div>
+  </div>
+  <!-- mi cuenta -->
+  <div class="mi-cuenta">
+    <p>Mi cuenta</p>     
+    <img src="assets/icon_mi_cuenta.svg">
+  </div>
+
+</div>
+
+<!-- <app-nav-bar></app-nav-bar> -->
+
+</body>
+</html>

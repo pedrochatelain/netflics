@@ -1,0 +1,75 @@
+* {
+    font-size: 18;
+    font-weight: normal;
+
+}
+
+.btn {
+    align-self: center;
+    display: grid;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 35px;
+}
+
+.btn, .mi-cuenta {
+    border-radius: 19px;
+
+}
+
+.btn:focus, .btn:active {     
+    background-color: #2F88FF;
+}
+
+.btn p {
+    margin: 0;
+    align-self: center;
+}
+
+.nav-buttons {
+    left: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav-buttons, .mi-cuenta {
+    margin-top: 22px;
+    position: absolute;
+    top: 0;
+    display: flex; 
+}
+
+.btn:hover, .mi-cuenta:hover {
+    cursor: pointer;
+    background-color: #1E1E1E;
+}
+
+.mat-badge-content {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #1E1E1E;
+    margin-top: 4px;
+    margin-right: 20px;
+    background: #2F88FF;
+    color: white;
+    /* font-size: 8px; */
+    /* padding-bottom: 4px; */
+}
+
+.mi-cuenta {
+    padding: 10px;
+    /* background-color: red; */
+    margin: 0;
+    margin-right: 10px;
+    top: 8px;
+    right: 0;
+}
+
+.mi-cuenta p {
+    margin-right: 10px;
+}
+
+/* .mat-badge {} */

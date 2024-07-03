@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+    background-color: #100F0F; 
+    color: white;
+    font-family: "Kreon", serif;
+
+}
+html, body { height: 100%; }
