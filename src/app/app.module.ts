@@ -10,13 +10,15 @@ import { routes } from './app.routes';
 import { NovedadesComponent } from './novedades/novedades.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { MoviePremiereComponent } from './movie-premiere/movie-premiere.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     NovedadesComponent,
-    HomeComponent
+    HomeComponent,
+    MoviePremiereComponent
   ],
   imports: [
     MatBadgeModule,
