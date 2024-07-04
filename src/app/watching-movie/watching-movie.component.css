@@ -1,0 +1,98 @@
+body {
+    display: grid;
+    height: 95vh;
+    grid-template-rows: 1fr;
+}
+
+.mat-icon {
+    opacity: .8;
+    cursor: pointer;
+    color: white;
+    transform: scale(1.2);
+    align-self: center;
+}
+
+.mat-icon:hover {
+    opacity: 1;
+}
+
+.back-button {
+    left: 0;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.back-arrow-and-title {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    height: fit-content;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    opacity: .8;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.trailer {
+    opacity: .8;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.progression-bar {
+    border-radius: 20px;
+    cursor: pointer;
+    height: 10px;
+    background-color: #2F88FF;
+}
+
+.elapsed-time {
+    align-self: flex-end;
+    width: 20%;
+    margin: 0;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.elapsed-time span {
+    opacity: .4;
+}
+
+.icons-bottom {
+    width: 100%;
+    display: flex;
+    margin-right: 10px;
+    align-self: center;
+    justify-content: end;
+}
+
+.icons-bottom mat-icon {
+    padding-left: 30px;
+    /* padding-bottom: ; */
+}
+
+.icon-fullscreen {
+    padding-left: 23px !important;
+    transform: scale(1.6);   
+}
+
+.icon-play {
+    opacity: .8;
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+svg:hover { 
+    opacity: 1;
+    /* fill: #2F88FF; */
+}

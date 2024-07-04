@@ -1,7 +1,9 @@
 html {
     background-color: #100F0F; 
     color: white;
-    font-family: "Kreon", serif;
+}
 
+* {
+    font-family: "Kreon", serif;
 }
 /* html, body { height: 100%; } */

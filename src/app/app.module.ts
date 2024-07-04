@@ -11,6 +11,8 @@ import { NovedadesComponent } from './novedades/novedades.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { MoviePremiereComponent } from './movie-premiere/movie-premiere.component';
+import { WatchingMovieComponent } from './watching-movie/watching-movie.component';
+import { MatIconModule } from '@angular/material/icon'
 
 @NgModule({
   declarations: [
@@ -18,13 +20,15 @@ import { MoviePremiereComponent } from './movie-premiere/movie-premiere.componen
     NavBarComponent,
     NovedadesComponent,
     HomeComponent,
-    MoviePremiereComponent
+    MoviePremiereComponent,
+    WatchingMovieComponent
   ],
   imports: [
     MatBadgeModule,
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule
+    RouterModule,
+    MatIconModule
   ],
   providers: [provideRouter(routes)],
   bootstrap: [AppComponent]
