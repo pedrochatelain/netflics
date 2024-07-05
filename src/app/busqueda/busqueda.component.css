@@ -1,0 +1,74 @@
+.buscador-and-filtros {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(0, 0%, 12%);
+    margin-top: 40px;
+}
+
+.buscador {
+    background-color: #1f1f1f;
+    width: 100%;
+    height: 80px;
+    border: none;
+    font-size: 36px;
+    color: white;
+    caret-color: #2F88FF;
+    padding-left: 20px;
+}
+
+.btn-filtros {
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    width: 180px;
+    background-color: #2F88FF;
+    border-radius: 10px;
+    border: none;
+    border: 2px solid #2F88FF;
+    margin: 0;
+    margin-right: 20px;
+    align-self: center;
+    height: 40px;
+}
+
+.btn-filtros:hover {
+    border: 2px solid white;
+}
+
+.filtro {
+    height: fit-content;
+    display: flex;
+    border: 2px solid #1f1f1f;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #1f1f1f;
+}
+
+.filtro p {
+    margin: 0;
+    margin-top: 3px;
+    /* margin-right: 10px; */
+}
+
+.filtro:hover {
+    border: 2px solid #2F88FF;
+    cursor: pointer;
+}
+
+.filtros {
+    display: flex;
+}
+
+.filtro mat-icon {
+    margin-left: 10px;
+}
+
+.display-none {
+    display: none;
+}
+
+.border-blue {
+    border: 2px solid #2F88FF;
+}

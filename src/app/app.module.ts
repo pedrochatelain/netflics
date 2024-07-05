@@ -12,7 +12,9 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { MoviePremiereComponent } from './movie-premiere/movie-premiere.component';
 import { WatchingMovieComponent } from './watching-movie/watching-movie.component';
-import { MatIconModule } from '@angular/material/icon'
+import { MatIconModule } from '@angular/material/icon';
+import { BusquedaComponent } from './busqueda/busqueda.component'
+import { FiltroDuracionComponent } from './filtro-duracion/filtro-duracion.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { MatIconModule } from '@angular/material/icon'
     NovedadesComponent,
     HomeComponent,
     MoviePremiereComponent,
-    WatchingMovieComponent
+    WatchingMovieComponent,
+    BusquedaComponent,
+    FiltroDuracionComponent,
   ],
   imports: [
     MatBadgeModule,
