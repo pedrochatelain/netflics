@@ -1,0 +1,64 @@
+body {
+    display: grid;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex; 
+    margin-left: 30px;
+}
+
+.movie {
+    justify-self: center;
+    transition-property: transform;
+    transition-duration: .5s;
+}
+
+.movie-transform {
+    transform: translateX(-100%);
+} 
+
+.btn {
+    z-index: 1;
+    background-color: rgba(16, 15, 15, .7);
+    display: grid;
+    border: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    align-self: center;
+    position: absolute;
+}
+
+.btn:hover {
+    height: 54px;
+    width: 54px;
+    cursor: pointer;
+}
+
+.btn-next {
+    justify-self: right;
+}
+
+.btn-anterior {
+    justify-self: left;
+}
+
+.btn-anterior mat-icon {
+    margin-top: 1px;
+    margin-right: 2px;
+    transform: rotate(180deg) scale(.8)
+}
+
+
+
+mat-icon {
+    color: white;
+    align-self: center;
+    justify-self: center;
+    transform: scale(.8);
+}
+
+.display-none {
+    display: none;
+}

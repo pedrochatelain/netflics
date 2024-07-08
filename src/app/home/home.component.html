@@ -1,6 +1,39 @@
-<app-movie-premiere
-    image_preview="assets/deadpoolandwolverine.webp"
-    title = "Deadpool & Wolverine"
-    type = "Estreno"
->
-</app-movie-premiere>
+<app-nav-bar></app-nav-bar>
+<body>
+    <div #container class="container">
+
+        <div class="movie">
+            <app-movie-premiere
+                image_preview="assets/deadpoolandwolverine.webp"
+                title = "Deadpool & Wolverine"
+                type = "Estreno">
+            </app-movie-premiere>
+        </div>
+
+        <div class="movie">
+            <app-movie-premiere
+                image_preview="assets/deadpoolandwolverine.webp"
+                title = "Deadpool & Wolverine"
+                type = "Estreno">
+            </app-movie-premiere>
+        </div>
+
+        <div class="movie">
+            <app-movie-premiere
+                image_preview="assets/deadpoolandwolverine.webp"
+                title = "Deadpool & Wolverine"
+                type = "Estreno">
+            </app-movie-premiere>
+        </div>
+    </div>
+
+    
+    <button #anterior class="btn btn-anterior">
+        <mat-icon class="mat-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_forward_ios"></mat-icon>  
+    </button>
+    <button #next class="btn btn-next">
+        <mat-icon class="mat-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_forward_ios"></mat-icon>  
+    </button>
+</body>
+
+

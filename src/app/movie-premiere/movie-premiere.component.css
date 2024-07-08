@@ -6,8 +6,8 @@ body {
 img {
     grid-row-start: 1;
     grid-column-start: 1;
-    width: 1250px;
-    height: 450px;
+    width: 1200px;
+    height: 500px;
     border-radius: 10px;
 
 }
@@ -16,12 +16,7 @@ img {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    /* background-image: url("../../assets/deadpoolandwolverine.webp"); */
-    background-size: 100%;
-    margin-top: 30px;
-    justify-self: center;
-    width: 1250px;
-    height: 450px;
+    margin-top: 10px;
 }
 
 .blur-filter {
