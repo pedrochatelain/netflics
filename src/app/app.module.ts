@@ -15,6 +15,8 @@ import { WatchingMovieComponent } from './watching-movie/watching-movie.componen
 import { MatIconModule } from '@angular/material/icon';
 import { BusquedaComponent } from './busqueda/busqueda.component'
 import { FiltroDuracionComponent } from './filtro-duracion/filtro-duracion.component';
+import { ContinuarViendoComponent } from './continuar-viendo/continuar-viendo.component';
+import { MovieContinuarViendoComponent } from './movie-continuar-viendo/movie-continuar-viendo.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { FiltroDuracionComponent } from './filtro-duracion/filtro-duracion.compo
     WatchingMovieComponent,
     BusquedaComponent,
     FiltroDuracionComponent,
+    ContinuarViendoComponent,
+    MovieContinuarViendoComponent,
   ],
   imports: [
     MatBadgeModule,

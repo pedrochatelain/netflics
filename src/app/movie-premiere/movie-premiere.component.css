@@ -1,18 +1,18 @@
 body {
     display: grid;
-    height: fit-content;
+    /* height: fit-content; */
 }
 
 img {
     grid-row-start: 1;
     grid-column-start: 1;
     width: 1200px;
-    height: 500px;
+    height: 480px;
     border-radius: 10px;
-
 }
 
 .premier-movie {    
+    /* height: 200px; */
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
