@@ -92,4 +92,12 @@
     margin-right: 10px;
 }
 
-/* .mat-badge {} */
+.display-none {
+    display: none;
+}
+
+.login-and-planes {
+    width: inherit;
+    display: flex;
+    justify-content: end;
+}

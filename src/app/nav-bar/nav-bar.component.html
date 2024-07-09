@@ -18,19 +18,27 @@
 <div style="display: flex;">
   <!-- nav buttons-->
   <div class="nav-buttons">
-    <div routerLink="/home" class="btn" tabindex="1">
+    <div *ngIf="show_inicio" routerLink="/home" class="btn" tabindex="1">
       <p>Inicio</p>
     </div>
-    <div routerLink="/busqueda" class="btn" tabindex="2">
+    <div *ngIf="show_buscar" routerLink="/busqueda" class="btn" tabindex="2">
       <p>Buscar películas o series</p>
     </div>
-    <div routerLink="/novedades" mat-raised-button matBadge="1" matBadgePosition="above after" class="btn btn-notificaciones" tabindex="3">
+    <div *ngIf="show_notificaciones" routerLink="/novedades" mat-raised-button matBadge="1" matBadgePosition="above after" class="btn btn-notificaciones" tabindex="3">
       <p 
       >Notificaciones</p>
     </div>
+    <div *ngIf="show_login || show_planes" class="login-and-planes">
+      <div *ngIf="show_login" routerLink="/login" class="btn login">
+        <p>Login</p>
+      </div>
+      <div *ngIf="show_planes" routerLink="/planes-de-suscripcion" class="btn">
+        <p>Planes de suscripción</p>
+      </div>
+    </div>
   </div>
   <!-- mi cuenta -->
-  <div class="mi-cuenta">
+  <div *ngIf="show_mi_cuenta" class="mi-cuenta">
     <p>Mi cuenta</p>     
     <img src="assets/icon_mi_cuenta.svg">
   </div>
