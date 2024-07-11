@@ -1,4 +1,8 @@
-<app-nav-bar></app-nav-bar>
+<app-nav-bar
+    [show_login] = false
+    [show_planes] = false
+    [is_selected_buscar] = true
+></app-nav-bar>
 <body>
     <div class="buscador-and-filtros">
         <input #buscador class="buscador" placeholder="{{my_placeholder}}" type="text">

@@ -34,12 +34,37 @@
 }
 
 .btn, .mi-cuenta {
+    transition-property: background-color;
+    transition-duration: 1s;
     border-radius: 19px;
 
 }
 
-.btn:focus, .btn:active {     
-    background-color: #2F88FF;
+/* The animation code */
+@keyframes example {
+    from {background-color: #100F0F;}
+    to {background-color: #2F88FF;}
+  }
+  
+  /* The element to apply the animation to */
+  /* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  } */
+
+.selected {     
+    /* background-color: #2F88FF !important; */
+    animation-name: example;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+
+}
+
+.selected:hover {
+    /* background-color: #2F88FF !important; */
 }
 
 .btn p {
@@ -54,7 +79,7 @@
 }
 
 .nav-buttons, .mi-cuenta {
-    margin-top: 22px;
+    margin-top: 14px;
     position: absolute;
     top: 0;
     display: flex; 
@@ -82,7 +107,7 @@
     /* background-color: red; */
     margin: 0;
     margin-right: 10px;
-    top: 11px;
+    top: 3px;
     right: 0;
 }
 
@@ -97,6 +122,7 @@
 }
 
 .login-and-planes {
+    margin-right: 20px;
     width: inherit;
     display: flex;
     justify-content: end;

@@ -19,6 +19,10 @@ import { ContinuarViendoComponent } from './continuar-viendo/continuar-viendo.co
 import { MovieContinuarViendoComponent } from './movie-continuar-viendo/movie-continuar-viendo.component';
 import { PlanesDeSuscripcionComponent } from './planes-de-suscripcion/planes-de-suscripcion.component';
 import { PlanSuscripcionComponent } from './plan-suscripcion/plan-suscripcion.component';
+import { LoginComponent } from './login/login.component';
+import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
 
 @NgModule({
   declarations: [
@@ -34,13 +38,16 @@ import { PlanSuscripcionComponent } from './plan-suscripcion/plan-suscripcion.co
     MovieContinuarViendoComponent,
     PlanesDeSuscripcionComponent,
     PlanSuscripcionComponent,
+    LoginComponent,
+    MiCuentaComponent,
   ],
   imports: [
     MatBadgeModule,
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule,
-    MatIconModule
+    MatIconModule,
+    MatProgressSpinnerModule
   ],
   providers: [provideRouter(routes)],
   bootstrap: [AppComponent]

@@ -1,0 +1,58 @@
+<app-nav-bar
+    [show_inicio] = false
+    [show_buscar] = false
+    [show_notificaciones] = false
+    [show_mi_cuenta] = false
+    [show_login] = true
+    [show_planes] = true
+    [is_selected_login] = true
+></app-nav-bar>
+
+<body>
+    <div #div_user class="user">
+        <p>Usuario</p>
+        <input #input_user type="text" autocomplete="off" placeholder="Ingrese aquí el nombre de usuario" (keyup.enter)="jumpToNextInput()">
+    </div>
+    <div #div_password class="password">
+        <p>Contraseña</p>
+        <input #input_password type="password" autocomplete="off">
+        <mat-icon class="icon-show-password" aria-hidden="false" fontIcon="visibility"></mat-icon>
+        <mat-icon class="display-none icon-hide-password" aria-hidden="false" fontIcon="visibility_off"></mat-icon>
+
+        
+    </div>
+    <button #btn_login>Iniciar sesión</button>
+
+    <div #loading class="loading display-none">
+        <mat-spinner class="mat-spinner-color"></mat-spinner>
+        <h1 class="text-loading">Cargando perfiles</h1>
+    </div>
+
+    
+
+</body>
+
+<div #container_perfiles class="container-perfiles display-none">
+    <h1 class="quien-esta-viendo">¿Quién está viendo?</h1>
+    <div #perfiles class="perfiles">
+        <div class="perfil">
+            <img routerLink="/home" src="assets/male-3.png" alt="" class="img-perfil">
+            <h2>John Doe</h2>
+        </div>
+        
+        <div class="perfil">
+            <img routerLink="/home" src="assets/CynthiaWarren.png" alt="" class="img-perfil">
+            <h2>Cynthia Warren</h2>
+        </div>
+    
+        <div class="perfil">
+            <img routerLink="/home" src="assets/LarryTurner.png" alt="" class="img-perfil">
+            <h2>Larry Turner</h2>
+        </div>
+    
+        <div class="perfil">
+            <img routerLink="/home" src="assets/PhilipDunn.png" alt="" class="img-perfil">
+            <h2>Philip Dunn</h2>
+        </div>
+    </div>
+</div>
