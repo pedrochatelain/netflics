@@ -6,8 +6,8 @@ body {
 img {
     grid-row-start: 1;
     grid-column-start: 1;
-    width: 1200px;
-    height: 480px;
+    width: 1250px;
+    height: 600px;
     border-radius: 10px;
 }
 
@@ -17,16 +17,18 @@ img {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     margin-top: 10px;
+    margin-left: 13px;
+    margin-right: 60px;
 }
 
 .blur-filter {
     
     align-self: center;
-    margin-left: 60px;
+    /* margin-left: 60px; */
     border-top-left-radius: 19px;
     border-bottom-left-radius: 19px;
-    width: 520px;
-    height: 410px;
+    width: 560px;
+    height: 100%;
     background-color: #1E1E1E;
     opacity: .5;
     filter: blur(40px);
@@ -63,8 +65,9 @@ h1 {
     justify-content: center;
     border: solid 2px transparent;
     cursor: pointer;
-    margin-top: 210px;
-    align-self: center;
+    /* margin-top: 210px; */
+    margin-bottom: 54px;
+    align-self: end;
     padding-left: 10px;
     padding-right: 16px;
     border-radius: 13px;
@@ -96,16 +99,16 @@ h1 {
 
 .btn-ir-a-pelicula {
     cursor: pointer;
-    margin-bottom: 30px;
+    margin-bottom: 7px;
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 13px;
     width: fit-content;
-    border: 2px solid #2F88FF;
+    border: 2px solid rgba(30, 30, 30, 0);
     align-self: flex-end;
-    background-color: rgba(30, 30, 30, .4);
+    background-color: rgba(30, 30, 30, .6);
 }
 
 .btn-ir-a-pelicula p {

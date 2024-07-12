@@ -38,10 +38,12 @@ body {
 
 .btn-next {
     justify-self: right;
+    margin-right: 80px;
 }
 
 .btn-anterior {
     justify-self: left;
+    margin-left: 80px;
 }
 
 .btn-anterior mat-icon {

@@ -47,7 +47,9 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
     MatBadgeModule,
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule,
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+    }),
     MatIconModule,
     MatProgressSpinnerModule
   ],

@@ -1,7 +1,11 @@
 * {
     font-size: 18;
     font-weight: normal;
-    height: fit-content;
+    /* height: fit-content; */
+}
+
+body {
+    margin-bottom: 80px;
 }
 
 .icon-netflics {
