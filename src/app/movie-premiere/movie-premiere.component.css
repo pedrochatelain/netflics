@@ -1,6 +1,6 @@
 body {
     display: grid;
-    /* height: fit-content; */
+    margin-top: 90px;
 }
 
 img {
@@ -16,7 +16,6 @@ img {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    margin-top: 10px;
     margin-left: 13px;
     margin-right: 60px;
 }

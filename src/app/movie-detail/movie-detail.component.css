@@ -2,9 +2,10 @@ body {
     display: grid;
 }
 
-app-nav-bar {
+/* app-nav-bar {
     z-index: 2;
-}
+    height: 190px;
+} */
 
 .image-movie-container {
     display: grid;
