@@ -1,0 +1,78 @@
+body {
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.username {
+    font-size: 20px;
+    margin: 0;
+}
+
+.date {
+    margin: 0;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.comment {
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 2px;
+}
+
+.container-comentario {
+    display: flex;
+    height: fit-content;
+    width: 700px;
+    /* background-color: rebeccapurple; */
+}
+
+.content {
+    margin-top: 4px;
+    margin-left: 20px;
+}
+
+.container-photo-profile {
+    width: fit-content;
+}
+
+.photo-profile {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+.container-calificacion {
+    width: 290px;
+    display: flex;
+    font-size: 16px;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.title-calificacion {
+    /* padding-bottom: 7px; */
+}
+
+.text-calificacion {
+    margin-top: 20px;
+    align-self: center;
+}
+
+.stars {
+    display: flex;
+    align-self: center;
+}
+
+.painted-star {
+    color: #2F88FF;
+}
+
+.not-painted-star {
+
+}

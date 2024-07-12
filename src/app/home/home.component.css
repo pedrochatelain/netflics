@@ -28,6 +28,7 @@ body {
     border-radius: 100%;
     align-self: center;
     position: absolute;
+    margin-top: 80px;
 }
 
 .btn:hover {

@@ -23,6 +23,8 @@ import { LoginComponent } from './login/login.component';
 import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
+import { ComentariosComponent } from './comentarios/comentarios.component';
+import { ComentarioComponent } from './comentarios/comentario/comentario.component';
 
 
 @NgModule({
@@ -42,6 +44,8 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
     LoginComponent,
     MiCuentaComponent,
     MovieDetailComponent,
+    ComentariosComponent,
+    ComentarioComponent,
   ],
   imports: [
     MatBadgeModule,

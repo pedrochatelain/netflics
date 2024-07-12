@@ -1,8 +1,15 @@
+body {
+    display: grid;
+}
+
+.container {
+    margin-top: 80px;
+}
+
 .buscador-and-filtros {
     display: flex;
     justify-content: center;
     background-color: hsl(0, 0%, 12%);
-    margin-top: 40px;
 }
 
 .buscador {
@@ -13,7 +20,7 @@
     font-size: 36px;
     color: white;
     caret-color: #2F88FF;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 .btn-filtros {
@@ -58,6 +65,7 @@
 }
 
 .filtros {
+    margin-left: 40px;
     display: flex;
 }
 

@@ -4,20 +4,21 @@
     [is_selected_buscar] = true
 ></app-nav-bar>
 <body>
-    <div class="buscador-and-filtros">
-        <input #buscador class="buscador" placeholder="{{my_placeholder}}" type="text">
-        <button class="btn-filtros">Filtros de búsqueda</button>
-    </div>
-    <div class="filtros">
-        <div #filtro_mostrar_peliculas class="filtro">
-            <p>Mostrar películas</p>
-            <mat-icon #icon_check class="mat-icon display-none" aria-hidden="false" aria-label="Example home icon" fontIcon="check"></mat-icon>
+    <div class="container">
+        <div class="buscador-and-filtros">
+            <input #buscador class="buscador" placeholder="{{my_placeholder}}" type="text">
+            <button class="btn-filtros">Filtros de búsqueda</button>
         </div>
-        <div #filtro_mostrar_series class="filtro">
-            <p>Mostrar series</p>
-            <mat-icon #icon_check class="mat-icon display-none" aria-hidden="false" aria-label="Example home icon" fontIcon="check"></mat-icon>
+        <div class="filtros">
+            <div #filtro_mostrar_peliculas class="filtro">
+                <p>Mostrar películas</p>
+                <mat-icon #icon_check class="mat-icon display-none" aria-hidden="false" aria-label="Example home icon" fontIcon="check"></mat-icon>
+            </div>
+            <div #filtro_mostrar_series class="filtro">
+                <p>Mostrar series</p>
+                <mat-icon #icon_check class="mat-icon display-none" aria-hidden="false" aria-label="Example home icon" fontIcon="check"></mat-icon>
+            </div>
+            <app-filtro-duracion></app-filtro-duracion>
         </div>
-        <app-filtro-duracion></app-filtro-duracion>
     </div>
-
 </body>
