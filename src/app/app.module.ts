@@ -22,6 +22,7 @@ import { PlanSuscripcionComponent } from './plan-suscripcion/plan-suscripcion.co
 import { LoginComponent } from './login/login.component';
 import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     PlanSuscripcionComponent,
     LoginComponent,
     MiCuentaComponent,
+    MovieDetailComponent,
   ],
   imports: [
     MatBadgeModule,
