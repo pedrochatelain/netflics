@@ -25,6 +25,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { ComentariosComponent } from './comentarios/comentarios.component';
 import { ComentarioComponent } from './comentarios/comentario/comentario.component';
+import { AgregarComentarioComponent } from './agregar-comentario/agregar-comentario.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { ComentarioComponent } from './comentarios/comentario/comentario.compone
     MovieDetailComponent,
     ComentariosComponent,
     ComentarioComponent,
+    AgregarComentarioComponent,
   ],
   imports: [
     MatBadgeModule,

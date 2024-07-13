@@ -1,0 +1,153 @@
+body {
+    margin-left: 40px;
+    margin-bottom: 140px;
+}
+
+.box-comment {
+    display: grid;
+    width: 500px;
+    height: 200px;
+}
+
+.box-comment textarea, .btn-comment, mat-icon {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.box-comment textarea {
+    border-radius: 4px;
+    border: none;
+    padding-top: 14px;
+    padding-left: 14px;
+    resize: none;
+    color: white;
+    background-color: #1E1E1E;
+    font-size: 18px;
+    outline: none;
+    width: inherit;
+    height: inherit;
+}
+
+.btn-comment {
+    font-size: 16px;
+    border: 2px solid #2F88FF;
+    padding: 6px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 20px;
+    color: white;
+    background-color: #2F88FF;
+    z-index: 1;
+    width: fit-content;
+    align-self: flex-end;
+    justify-self: end;
+    margin-bottom: 14px;
+    margin-right: 14px;
+}
+
+.btn-comment:hover {
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+/* The animation code */
+@keyframes hide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0; 
+        display: none;
+    }
+}
+  
+.animation-hide {
+    animation-name: hide;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+.animation-circle {
+    animation-name: convert_to_circle;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes convert_to_circle {
+    from {
+        border-radius: 4px;
+        width: 500px;
+        height: 200px;
+    }
+    to {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+    }
+}
+
+.box-comment mat-icon {
+    color: #2F88FF;
+    align-self: center;
+    justify-self: center;
+}
+
+.display-none {
+    display: none;
+}
+
+.animation-show {
+    animation-name: show;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.visibility-none {
+    visibility: hidden;
+}
+
+.title-puntuacion {
+    margin-top: 60px;
+}
+
+.stars {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+}
+
+.stars mat-icon {
+    transform: scale(2);
+}
+
+.box-comment mat-icon {
+    transform: scale(1.2);
+}
+
+.stars mat-icon:hover {
+    cursor: pointer;
+    transform: scale(2.4);
+}
+
+.painted-star {
+    color: #2F88FF;
+}
+
+.empty-star {
+    color: white;
+}
+
+.container-puntuacion {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
