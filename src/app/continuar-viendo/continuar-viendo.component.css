@@ -1,4 +1,8 @@
 body {
-    margin-top: 60px;
-    margin-left: 44px;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+h1 {
+    font-size: 30px;
 }

@@ -12,9 +12,14 @@ export class HomeComponent {
   @ViewChild("next")
   prox!: ElementRef;
 
+  @ViewChild("container_next")
+  container_next!: ElementRef;
   
   @ViewChild("anterior")
   anterior!: ElementRef;
+
+  @ViewChild("container_anterior")
+  container_anterior!: ElementRef;
 
   coef = 0;
   cantEstrenos = 3;
@@ -24,9 +29,21 @@ export class HomeComponent {
 
 
   ngAfterViewInit() {
-    this.anterior.nativeElement.classList.add("display-none")
+    // this.anterior.nativeElement.classList.add("display-none")
     var movies = this.container.nativeElement.querySelectorAll(".movie");
-    this.prox.nativeElement.addEventListener('click', () => {
+
+    // this.prox.nativeElement.addEventListener('click', () => {
+    //   this.anterior.nativeElement.classList.remove("display-none")
+    //   this.coef += 100;
+    //   movies.forEach((element:any) => {
+    //     element.style.transform = `translateX(${-this.coef}%)`
+    //   });
+    //   if (this.coef == 200) {
+    //     this.prox.nativeElement.classList.add("display-none")
+    //   }
+    // });
+    // container_next
+    this.container_next.nativeElement.addEventListener('click', () => {
       this.anterior.nativeElement.classList.remove("display-none")
       this.coef += 100;
       movies.forEach((element:any) => {
@@ -37,7 +54,18 @@ export class HomeComponent {
       }
     });
 
-    this.anterior.nativeElement.addEventListener('click', () => {
+    // this.anterior.nativeElement.addEventListener('click', () => {
+    //   this.prox.nativeElement.classList.remove("display-none")
+    //   this.coef -= 100
+    //   movies.forEach((element:any) => {
+    //     element.style.transform = `translateX(${- this.coef}%)`
+    //   });
+    //   if (this.coef == 0) {
+    //     this.anterior.nativeElement.classList.add("display-none")
+    //   } 
+    // })
+    // container_anterior
+    this.container_anterior.nativeElement.addEventListener('click', () => {
       this.prox.nativeElement.classList.remove("display-none")
       this.coef -= 100
       movies.forEach((element:any) => {

@@ -8,7 +8,7 @@
 
         <div class="movie">
             <app-movie-premiere
-                image_preview="assets/movie_detail_deadpool.jpg"
+                image_preview="assets/deadpool-wolverine-ryan-reynolds-and-hugh-jackman.avif"
                 title = "Deadpool & Wolverine"
                 type = "Estreno">
             </app-movie-premiere>
@@ -30,12 +30,16 @@
             </app-movie-premiere>
         </div>
     </div>
-    <button #anterior class="btn btn-anterior">
-        <mat-icon class="mat-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_forward_ios"></mat-icon>  
-    </button>
-    <button #next class="btn btn-next">
-        <mat-icon class="mat-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_forward_ios"></mat-icon>  
-    </button>
+    <div #container_anterior class="container-anterior">
+        <button #anterior class="btn btn-anterior">
+            <mat-icon class="mat-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_forward_ios"></mat-icon>  
+        </button>
+    </div>
+    <div #container_next class="container-next">
+        <button #next class="btn btn-next">
+            <mat-icon class="mat-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_forward_ios"></mat-icon>  
+        </button>
+    </div>
 
     
 

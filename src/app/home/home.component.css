@@ -20,37 +20,34 @@ body {
 
 .btn {
     z-index: 1;
-    background-color: rgba(16, 15, 15, .7);
-    display: grid;
+    /* background-color: red; */
+    background-color: transparent;
     border: 0;
+    /* display: grid;
     height: 50px;
     width: 50px;
-    border-radius: 100%;
+    border-radius: 100%; */
     align-self: center;
-    position: absolute;
-    margin-top: 80px;
+    /* position: absolute; */
+    /* margin-top: 80px; */
 }
 
 .btn:hover {
-    height: 54px;
-    width: 54px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .btn-next {
     justify-self: right;
-    margin-right: 80px;
+    margin-right: 10px;
 }
 
 .btn-anterior {
     justify-self: left;
-    margin-left: 80px;
+    margin-left: 10px;
 }
 
 .btn-anterior mat-icon {
-    margin-top: 1px;
-    margin-right: 2px;
-    transform: rotate(180deg) scale(.8)
+    transform: rotate(180deg) scale(1.3)
 }
 
 
@@ -59,9 +56,28 @@ mat-icon {
     color: white;
     align-self: center;
     justify-self: center;
-    transform: scale(.8);
+    transform: scale(1.3);
 }
 
 .display-none {
     display: none;
+}
+
+.container-next, .container-anterior {
+    z-index: 1;
+    width: 60px;
+    background-color: rgba(16, 15, 15, .6);
+    /* opacity: .7; */
+    display: grid;
+    position: absolute;
+    height: 100%;
+    /* cursor: pointer; */
+}
+
+.container-next {
+    justify-self: right;
+}
+
+.container-anterior {
+    justify-self: left;
 }
