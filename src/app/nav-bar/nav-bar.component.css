@@ -1,12 +1,9 @@
 * {
     font-size: 18;
     font-weight: normal;
-    /* height: fit-content; */
 }
 
 body {
-    /* background-color: #100F0F; */
-    /* background-color: transparent; */
     top: 0;
     margin-bottom: 80px;
     position: fixed;
@@ -59,27 +56,13 @@ body {
 @keyframes example {
     from {background-color: #100F0F;}
     to {background-color: #2F88FF;}
-  }
-  
-  /* The element to apply the animation to */
-  /* div {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    animation-name: example;
-    animation-duration: 4s;
-  } */
+}
 
 .selected {     
-    /* background-color: #2F88FF !important; */
     animation-name: example;
     animation-duration: .3s;
     animation-fill-mode: forwards;
 
-}
-
-.selected:hover {
-    /* background-color: #2F88FF !important; */
 }
 
 .btn p {
@@ -106,20 +89,15 @@ body {
 }
 
 .mat-badge-content {
-    width: 20px;
-    height: 20px;
-    /* border: 1px solid #1E1E1E; */
+    border: 2px solid #100F0F;
     margin-top: 4px;
-    margin-right: 20px;
+    margin-right: 18px;
     background: #2F88FF;
     color: white;
-    /* font-size: 8px; */
-    /* padding-bottom: 4px; */
 }
 
 .mi-cuenta {
     padding: 10px;
-    /* background-color: red; */
     margin: 0;
     margin-right: 10px;
     top: 3px;
