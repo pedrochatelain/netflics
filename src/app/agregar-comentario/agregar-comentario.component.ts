@@ -46,7 +46,7 @@ export class AgregarComentarioComponent {
         icon_thumb.classList.add('animation-show')
       }, 800);
       setTimeout(() => {
-        this.container_puntuacion.nativeElement.classList.remove('display-none')
+        this.container_puntuacion.nativeElement.classList.remove('visibility-none')
         this.container_puntuacion.nativeElement.classList.add('animation-show')
       }, 1300);
     })

@@ -1,16 +1,16 @@
 body {
     display: grid;
     margin-top: 80px;
-    
+    justify-self: center;
+    margin-left: 1.3vw;
+    /* margin-right: 1.3vw; */
 }
 
 img {
     grid-row-start: 1;
     grid-column-start: 1;
-    /* width: 1250px;
-    height: 600px; */
-    width: 1200px;
-    height: 450px;
+    width: 89vw;
+    height: 75vh;
     border-radius: 5px;
 }
 
@@ -21,22 +21,15 @@ img {
 }
 
 .premier-movie {    
-    /* position: absolute; */
     border: 2px solid transparent;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    margin-left: 30px;
-    margin-right: 20px;
-    /* margin-right: 60px; */
 }
 
 .blur-filter {
-    
     align-self: center;
     margin-left: 40px;
-    /* border-top-left-radius: 19px;
-    border-bottom-left-radius: 19px; */
     width: 560px;
     height: 80%;
     background-color: #1E1E1E;
@@ -75,7 +68,6 @@ h1 {
     justify-content: center;
     border: solid 2px transparent;
     cursor: pointer;
-    /* margin-top: 210px; */
     margin-bottom: 54px;
     align-self: end;
     padding-left: 10px;

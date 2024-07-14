@@ -5,10 +5,11 @@ body {
 
 .container {
     display: flex; 
-    margin-left: 30px;
+    margin-left: 3.2vw;
 }
 
 .movie {
+    transform: translateX(-100%);
     justify-self: center;
     transition-property: transform;
     transition-duration: .5s;
@@ -66,7 +67,7 @@ mat-icon {
 .container-next, .container-anterior {
     z-index: 1;
     width: 60px;
-    background-color: rgba(16, 15, 15, .6);
+    background-color: rgba(16, 15, 15, .8);
     /* opacity: .7; */
     display: grid;
     position: absolute;
