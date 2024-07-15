@@ -26,6 +26,8 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { ComentariosComponent } from './comentarios/comentarios.component';
 import { ComentarioComponent } from './comentarios/comentario/comentario.component';
 import { AgregarComentarioComponent } from './agregar-comentario/agregar-comentario.component';
+import { FaqComponent } from './section-faq/faq/faq.component';
+import { SectionFaqComponent } from './section-faq/section-faq.component';
 
 
 @NgModule({
@@ -48,6 +50,8 @@ import { AgregarComentarioComponent } from './agregar-comentario/agregar-comenta
     ComentariosComponent,
     ComentarioComponent,
     AgregarComentarioComponent,
+    FaqComponent,
+    SectionFaqComponent,
   ],
   imports: [
     MatBadgeModule,
