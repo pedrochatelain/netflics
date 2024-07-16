@@ -1,0 +1,77 @@
+body {
+    display: grid;
+    margin-top: 120px;
+    width: 100%
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: normal;
+    width: 300px;
+}
+
+.container-settings {
+    display: grid;
+    width: 80vw;
+    height: 400px;
+    justify-self: center;
+}
+
+.container-idioma, .container-plan {
+    display: flex;
+    align-items: center;
+
+}
+
+.container-plan {
+}
+
+.dropdown-idioma {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-idioma h3 {
+}
+
+.container-user {
+    justify-self: center;
+    width: inherit;
+    display: grid;
+    height: fit-content;
+}
+
+.container-user h1 {
+    width: fit-content;
+    justify-self: center;
+}
+
+.container-user h1, .img-user {
+    /* grid-row-start: 1; */
+}
+
+.img-user {
+    justify-self: center;
+    width: 100px;
+}
+
+.container-perfiles-creados, .perfiles-creados {
+    display: flex;
+}
+
+
+
+.btn-actualizar-plan {
+    font-size: 18px;
+    border: 0;
+    padding: 14px;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: #2F88FF;
+    color: white;
+    margin-left: 40px;
+}
+
+app-created-profile {
+    height: fit-content;
+}

@@ -3,4 +3,32 @@
     [show_planes] = false
     [is_selected_mi_cuenta] = true
 ></app-nav-bar>
-<p>mi-cuenta works!</p>
+<body #body_mi_cuenta>
+    <div class="container-user">
+        <img class="img-user" src="../../assets/icon_mi_cuenta.svg" alt="">
+        <h1>Pedro Chatelain</h1>
+    </div>
+    <div class="container-settings">
+        <div class="container-perfiles-creados">
+            <h2>Perfiles creados</h2>
+            <div class="perfiles-creados">
+                <app-created-profile></app-created-profile>
+                <app-created-profile></app-created-profile>
+
+            </div>
+        </div>
+        <div class="container-idioma">
+            <h2>Idioma</h2>
+            <div class="dropdown-idioma">
+                <h3>Español</h3>
+                <mat-icon fontIcon="keyboard_arrow_down"></mat-icon>
+
+            </div>
+        </div>
+        <div class="container-plan">
+            <h2>Plan actual</h2>
+            <h3>Advanced</h3>
+            <button class="btn-actualizar-plan">Actualizar plan</button>
+        </div>
+    </div>
+</body>

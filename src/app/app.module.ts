@@ -28,6 +28,7 @@ import { ComentarioComponent } from './comentarios/comentario/comentario.compone
 import { AgregarComentarioComponent } from './agregar-comentario/agregar-comentario.component';
 import { FaqComponent } from './section-faq/faq/faq.component';
 import { SectionFaqComponent } from './section-faq/section-faq.component';
+import { CreatedProfileComponent } from './mi-cuenta/created-profile/created-profile.component';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import { SectionFaqComponent } from './section-faq/section-faq.component';
     AgregarComentarioComponent,
     FaqComponent,
     SectionFaqComponent,
+    CreatedProfileComponent,
   ],
   imports: [
     MatBadgeModule,

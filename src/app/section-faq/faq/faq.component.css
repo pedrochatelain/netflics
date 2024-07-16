@@ -39,6 +39,10 @@
     color: #2F88FF;
 }
 
+.header-faq h2 {
+    font-weight: normal;
+}
+
 .content-faq {
     overflow-y: hidden;
     padding-top: 20px;
