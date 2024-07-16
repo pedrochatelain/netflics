@@ -7,31 +7,20 @@ import { Component, ElementRef, HostListener, Input, ViewChild } from '@angular/
 })
 export class CreatedProfileComponent {
 
-  @Input()
-  cerrado = 'false'
-  
-  @ViewChild("body")
-  body!: ElementRef;
-
   @ViewChild("perfil")
   perfil!: ElementRef;
   
   @ViewChild("container_actions")
   container_actions!: ElementRef;
 
+  constructor(private eRef: ElementRef) {}
+
   ngAfterViewInit() {
-    this.perfil.nativeElement.addEventListener('click', (e:Event)=> {
-      this.container_actions.nativeElement.classList.toggle('display-none')
-      this.perfil.nativeElement.classList.toggle('selected-profile')
+    this.perfil.nativeElement.addEventListener('click', () => {
+      this.container_actions.nativeElement.classList.remove('display-none')
+      this.perfil.nativeElement.classList.add('selected-profile')
     })
-
-    // this.body.nativeElement.addEventListener('click', (event: Event) => {
-    //   console.log(event.target)
-    // })
   }
-
-  public text: String;
-
 
   @HostListener('document:click', ['$event'])
   clickout(event:Event) {
@@ -41,10 +30,6 @@ export class CreatedProfileComponent {
       this.container_actions.nativeElement.classList.add('display-none')
       this.perfil.nativeElement.classList.remove('selected-profile')
     }
-  }
-
-  constructor(private eRef: ElementRef) {
-    this.text = 'no clicks yet';
   }
 
 }
