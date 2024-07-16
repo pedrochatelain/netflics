@@ -1,9 +1,19 @@
-<!-- <app-nav-bar
-    background_color="transparent"
->
-</app-nav-bar> -->
 <app-nav-bar></app-nav-bar>
 <body>
+    <button class="btn-add-favorites">
+        <div #container_loading class="display-none loading-add-favorites">
+            <mat-spinner class="mat-spinner-color"></mat-spinner>
+            <p>Agregando a favoritos</p>
+        </div>
+        <div #container_add_favorites class="container-btn-add-favorites">
+            <mat-icon fontIcon="favorites"></mat-icon>
+            <p>Agregar a favoritos</p>
+        </div>
+        <div #container_added_to_favorites class="display-none container-btn-add-favorites">
+            <mat-icon fontIcon="check"></mat-icon>
+            <p>Agregada a favoritos</p>
+        </div>
+    </button>
     <div class="blur-filter"></div>
     <div class="image-movie-container">
         <img src="assets/deadpoolandwolverine.webp" alt="">
