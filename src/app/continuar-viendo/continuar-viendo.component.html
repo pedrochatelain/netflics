@@ -1,18 +1,47 @@
 <body>
-    <h1>Continuar viendo</h1>
-    <div style="display: flex;">
+    <h1>{{title}}</h1>
+    <div #container_movies class="container-movies">
 
         <app-movie-continuar-viendo
-            image="assets/toystory.png"
+            image="{{src_movie_one == '' ? 'assets/toystory.png' : src_movie_one}}"
+            [show_progression_bar] = "continuar_viendo ? true : false"
+            [show_remaining_time]= "continuar_viendo ? true : false"
         ></app-movie-continuar-viendo>
         
         <app-movie-continuar-viendo
-            image="assets/monsters_inc.png"
+            image="{{src_movie_two == '' ? 'assets/monsters_inc.png' : src_movie_two}}"
+            [show_progression_bar] = "continuar_viendo ? true : false"
+            [show_remaining_time]= "continuar_viendo ? true : false"
         ></app-movie-continuar-viendo>
         
         <app-movie-continuar-viendo
-            image="assets/ratatouille.png"
+            image="{{src_movie_three == '' ? 'assets/ratatouille.png' : src_movie_three}}"
+            [show_progression_bar] = "continuar_viendo ? true : false"
+            [show_remaining_time]= "continuar_viendo ? true : false"
+        ></app-movie-continuar-viendo>
+        
+        <app-movie-continuar-viendo
+            image="{{src_movie_four == '' ? 'assets/bugs_life.jfif' : src_movie_four}}"
+            [show_progression_bar] = "continuar_viendo ? true : false"
+            [show_remaining_time]= "continuar_viendo ? true : false"
         ></app-movie-continuar-viendo>
 
+        <app-movie-continuar-viendo
+            image="{{src_movie_five == '' ? 'assets/cars.webp' : src_movie_five}}"
+            [show_progression_bar] = "continuar_viendo ? true : false"
+            [show_remaining_time]= "continuar_viendo ? true : false"
+        ></app-movie-continuar-viendo>
+    
+    </div>
+    <div #container_show_more class="container-show-more">
+        <button class="btn-scroll-left">
+            <mat-icon class="mat-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_forward_ios"></mat-icon>  
+        </button>
+    </div>
+    <div #container_show_less class="container-show-less">
+        <button class="btn-scroll-right">
+            <mat-icon class="mat-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_forward_ios"></mat-icon>  
+        </button>
     </div>
 </body>
+

@@ -3,6 +3,7 @@
     [show_planes] = false
     [is_selected_home] = true
 ></app-nav-bar>
+
 <body>
     <div #container class="container">
 
@@ -46,5 +47,15 @@
 </body>
 
 <app-continuar-viendo></app-continuar-viendo>
+
+<app-continuar-viendo
+    title="Ya que has visto Toy Story..."
+    [continuar_viendo] = false
+    src_movie_one = 'assets/toystory2.jfif'
+    src_movie_two = 'assets/toystory3.webp'
+    src_movie_three = 'assets/toystory4.jfif'
+    src_movie_four = 'assets/lightyear.jfif'
+></app-continuar-viendo>
+
 
 <app-section-faq></app-section-faq>

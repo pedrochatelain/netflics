@@ -1,19 +1,19 @@
 body {
     display: grid;
-    width: 370px;
-    height: 230px;
+    width: 300px;
+    height: 200px;
     margin-right: 30px;
     border: 2px solid transparent;
 }
 
-body:hover {
+#movie:hover {
     transition-property: border;
-    transition-duration: .5s;
+    transition-duration: .3s;
     border: 2px solid white;
     border-radius: 10px;
 }
 
-body:not(:hover) {
+#movie:not(:hover) {
     transition-property: border;
     transition-duration: .3s;
     border: 2px solid transparent;
@@ -31,6 +31,8 @@ p {
 }
 
 #movie {
+    grid-row-start: 1;
+    grid-column-start: 1;
     cursor: pointer;
     z-index: 1;
     display: grid;
@@ -46,10 +48,8 @@ p {
     width: inherit;
     height: inherit;
     opacity: .8;
-    border-radius: 10px;
+    border-radius: 6px;
 }
-
-
 
 #movie-image, #progression-bar {
     grid-row-start: 1;
@@ -62,8 +62,8 @@ p {
     justify-self: center;
     align-self: flex-end;
     background-color: white;
-    width: 96%;
-    height: .6vw;
+    width: 94%;
+    height: .4vw;
     border-radius: 4px;
     margin-bottom: 1%;
 }
@@ -75,11 +75,14 @@ p {
     border-radius: 10px 0px 0px 10px;   
 }
 
+
+
 #play-layer {
     display: grid;
-    position: absolute;
     width: inherit;
     height: inherit;
+    grid-row-start: 1;
+    grid-column-start: 1;
 }
 
 #play-layer img {
@@ -122,4 +125,12 @@ p {
     animation-name: hide;
     animation-duration: .3s;
     animation-fill-mode: forwards;
+}
+
+.scale-movie {
+    transform: scale(1.02);
+}
+
+.unscale-movie {
+    transform: scale(1);
 }

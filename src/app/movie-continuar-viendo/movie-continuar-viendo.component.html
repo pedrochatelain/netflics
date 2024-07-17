@@ -1,11 +1,11 @@
 <body>
     <div #movie id="movie">
         <img id="movie-image" src={{image}} alt="">
-        <div id="progression-bar">
+        <div *ngIf="show_progression_bar" id="progression-bar">
             <div id="elapsed"></div>
         </div>
     </div>
-    <p>75 minutos para terminarla</p>
+    <p *ngIf="show_remaining_time">75 minutos para terminarla</p>
     <div id="play-layer">
         <img #play_button src="assets/icon_watch.svg" class="display_none" alt="">
     </div>
