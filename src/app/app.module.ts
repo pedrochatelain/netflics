@@ -16,7 +16,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { BusquedaComponent } from './busqueda/busqueda.component'
 import { FiltroDuracionComponent } from './filtro-duracion/filtro-duracion.component';
 import { ContinuarViendoComponent } from './continuar-viendo/continuar-viendo.component';
-import { MovieContinuarViendoComponent } from './movie-continuar-viendo/movie-continuar-viendo.component';
+import { MovieContinuarViendoComponent } from './continuar-viendo/movie-continuar-viendo/movie-continuar-viendo.component';
 import { PlanesDeSuscripcionComponent } from './planes-de-suscripcion/planes-de-suscripcion.component';
 import { PlanSuscripcionComponent } from './plan-suscripcion/plan-suscripcion.component';
 import { LoginComponent } from './login/login.component';
