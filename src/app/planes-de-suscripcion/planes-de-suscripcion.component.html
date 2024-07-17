@@ -8,10 +8,51 @@
     [is_selected_planes] = true
 ></app-nav-bar>
 
-<body>
-    <app-plan-suscripcion></app-plan-suscripcion>
-    <app-plan-suscripcion></app-plan-suscripcion>
-    <app-plan-suscripcion></app-plan-suscripcion>
-    <app-plan-suscripcion></app-plan-suscripcion>    
+<body #body>
+    <app-plan-suscripcion #plan
+        nombre = "Free"
+        precio = "0 ARS"
+        calidad_video = "Normal"
+        resolucion = "480p"
+        dispositivos = "Smartphone"
+        [offline] = false
+        [libre_publicidades] = false
+        cantidad_perfiles = 1
+        text_button = "Elegir plan Free"
+    ></app-plan-suscripcion>
+    <app-plan-suscripcion #plan
+        nombre = "Standard"
+        precio = "2000 ARS"
+        calidad_video = "Normal"
+        resolucion = "480p"
+        dispositivos = "Smartphone y tablets"
+        [offline] = false
+        [libre_publicidades] = true
+        cantidad_perfiles = 2
+        text_button = "Elegir plan Standard"
+    ></app-plan-suscripcion>
+    <app-plan-suscripcion #plan
+        nombre = "Advanced"
+        precio = "3000 ARS"
+        calidad_video = "HD"
+        resolucion = "1080p"
+        dispositivos = "Smartphone y tablets"
+        [offline] = true
+        [libre_publicidades] = true
+        cantidad_perfiles = 3
+        text_button = "Elegir plan Advanced"
+    ></app-plan-suscripcion> 
+    <app-plan-suscripcion #plan
+        nombre = "Premium"
+        precio = "5000 ARS"
+        calidad_video = "Full HD"
+        resolucion = "4K + HDR"
+        dispositivos = "Smartphone, tablets y PC"
+        [offline] = true
+        [libre_publicidades] = true
+        cantidad_perfiles = 5
+        text_button = "Elegir plan PREMIUM"
+        [premium] = true
+    ></app-plan-suscripcion> 
 </body>
 

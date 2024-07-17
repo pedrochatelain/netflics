@@ -1,0 +1,36 @@
+<body #plan>
+    <h1 [ngClass]="premium? 'premium' : 'my_class2'">{{nombre}}</h1>
+    <div class="precio-mensual">
+        <p class="title-precio-mensual">Precio mensual</p>
+        <p class="value-precio-mensual">{{precio}}</p>
+    </div>
+    <div class="calidad-de-video">
+        <p class="title-calidad-de-video">Calidad de video</p>
+        <p class="value-calidad-de-video">{{calidad_video}}</p>
+    </div>
+    <div class="resolucion">
+        <p class="title-resolucion">Resolución</p>
+        <p class="value-resolucion">{{resolucion}}</p>
+    </div>
+    <div class="dispositivos">
+        <p class="title-dispositivos">Dispositivos</p>
+        <p class="value-dispositivos">{{dispositivos}}</p>
+    </div>
+    <div class="offline">
+        <p class="title-offline">Offline</p>
+        <mat-icon *ngIf=" ! offline" class="mat-icon false" aria-hidden="false" fontIcon="close"></mat-icon>
+        <mat-icon [ngClass]="premium? 'premium' : 'my_class2'" *ngIf="offline" class="mat-icon true" aria-hidden="false" fontIcon="check"></mat-icon>
+    </div>
+    <div class="libre-de-publicidades">
+        <p class="title-libre-de-publicidades">Libre de publicidades</p>
+        <mat-icon *ngIf=" ! libre_publicidades" class="mat-icon false" aria-hidden="false" fontIcon="close"></mat-icon>
+        <mat-icon [ngClass]="premium? 'premium' : 'my_class2'" *ngIf="libre_publicidades" class="mat-icon true" aria-hidden="false" fontIcon="check"></mat-icon>
+    </div>
+    <div class="cantidad-de-perfiles">
+        <p class="title-cantidad-de-perfiles">Cantidad de perfiles</p>
+        <p class="value-cantidad-de-perfiles">{{cantidad_perfiles}}</p>
+    </div>
+    <div #container_button class="container-button display-none">
+        <button>{{text_button}}</button>
+    </div>
+</body>

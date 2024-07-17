@@ -1,6 +1,18 @@
 body {
-    /* height: 100vh; */
-    align-items: center;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
+}
+
+.blur {
+    transition-property: opacity;
+    transition-duration: .3s;
+    opacity: .7;
+    /* background-color: red; */
+    /* backdrop-filter: blur(10px); */
+}
+
+app-plan-suscripcion {
+    height: fit-content;
+    width: fit-content;
 }

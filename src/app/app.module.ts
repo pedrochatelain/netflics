@@ -18,7 +18,7 @@ import { FiltroDuracionComponent } from './filtro-duracion/filtro-duracion.compo
 import { ContinuarViendoComponent } from './continuar-viendo/continuar-viendo.component';
 import { MovieContinuarViendoComponent } from './continuar-viendo/movie-continuar-viendo/movie-continuar-viendo.component';
 import { PlanesDeSuscripcionComponent } from './planes-de-suscripcion/planes-de-suscripcion.component';
-import { PlanSuscripcionComponent } from './plan-suscripcion/plan-suscripcion.component';
+import { PlanSuscripcionComponent } from './planes-de-suscripcion/plan-suscripcion/plan-suscripcion.component';
 import { LoginComponent } from './login/login.component';
 import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { PlanSuscripcionComponent } from './plan-suscripcion/plan-suscripcion.component';
 
 @Component({
   selector: 'app-planes-de-suscripcion',
@@ -7,10 +8,21 @@ import { Component } from '@angular/core';
 })
 export class PlanesDeSuscripcionComponent {
 
-  selected: boolean = false;
+  @ViewChild("body")
+  body!: ElementRef;
 
   ngAfterViewInit() {
-    this.selected = true;
+    var planes = this.body.nativeElement.querySelectorAll('app-plan-suscripcion')
+    
+    planes.forEach((element: HTMLElement) => {
+      element.addEventListener('click', (e:Event) => {
+        planes.forEach((el: HTMLElement) => {
+          el.classList.add('blur')
+          element.classList.remove('blur')
+        })
+      })
+    });
+    console.log(planes)
   }
 
 }
