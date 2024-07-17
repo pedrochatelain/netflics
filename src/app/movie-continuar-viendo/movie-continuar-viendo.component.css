@@ -3,6 +3,21 @@ body {
     width: 370px;
     height: 230px;
     margin-right: 30px;
+    border: 2px solid transparent;
+}
+
+body:hover {
+    transition-property: border;
+    transition-duration: .5s;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+body:not(:hover) {
+    transition-property: border;
+    transition-duration: .3s;
+    border: 2px solid transparent;
+    border-radius: 10px;
 }
 
 h2 {
@@ -12,7 +27,6 @@ h2 {
 p {
     margin: 0;
     margin-top: 4px;
-    /* margin-left: 10px; */
     font-weight: lighter;
 }
 
@@ -31,7 +45,6 @@ p {
 #movie-image {
     width: inherit;
     height: inherit;
-
     opacity: .8;
     border-radius: 10px;
 }
@@ -71,17 +84,42 @@ p {
 
 #play-layer img {
     z-index: 2;
-    /* opacity: 1; */
     justify-self: center;
     align-self: center;
     transform: scale(.6);
 }
 
-#play-layer img:hover {
-    cursor: pointer;
-    transform: scale(.66);
-}
-
 .display_none {
     display: none;
+}
+
+.animation-show {
+    animation-name: show;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0; 
+        display: none;
+    }
+}
+  
+.animation-hide {
+    animation-name: hide;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
 }

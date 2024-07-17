@@ -16,21 +16,6 @@ export class MovieContinuarViendoComponent {
   @Input()
   image = "";
 
-  // @Input()
-  // title = "";
-
-  // ngAfterViewInit() {
-  //   this.btn.nativeElement
-  //   .addEventListener('click', () => {
-  //     var opciones = this.opciones.nativeElement.querySelectorAll(".opcion");
-  //     opciones.forEach((element:any) => {
-  //       element.classList.toggle('display-none');
-  //       element.classList.toggle('disp');
-  //     });
-  //   });
-  //   ;
-  // }
-
   ngAfterViewInit() {
     this.play_button.nativeElement
     .addEventListener('mouseover', () => {
@@ -45,10 +30,12 @@ export class MovieContinuarViendoComponent {
     .addEventListener('mouseover', () => {
       this.movie.nativeElement.classList.add("movie_hover"),
       this.play_button.nativeElement.classList.remove("display_none")
+      this.play_button.nativeElement.classList.add("animation-show")
     });
 
     this.movie.nativeElement
     .addEventListener('mouseout', () => {
+      this.play_button.nativeElement.classList.remove("animation-show")
       this.movie.nativeElement.classList.remove("movie_hover"),
       this.play_button.nativeElement.classList.add("display_none")
     });

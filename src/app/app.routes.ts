@@ -8,6 +8,7 @@ import { PlanesDeSuscripcionComponent } from './planes-de-suscripcion/planes-de-
 import { WatchingMovieComponent } from './watching-movie/watching-movie.component';
 
 export const routes = [
+    {path: '', component: LoginComponent},
     {path: 'novedades', component: NovedadesComponent},
     {path: 'home', component: HomeComponent},
     {path: 'watch', component: WatchingMovieComponent},
