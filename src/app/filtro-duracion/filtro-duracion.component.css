@@ -42,7 +42,7 @@ body {
 
 .opcion {
     display: flex;
-    justify-content: center;
+    width: fit-content;
     border-radius: 20px;
     font-size: 14px;
     cursor: pointer;
@@ -70,3 +70,6 @@ body {
     margin-top: 10px;
 }
 
+.border-blue {
+    border: 1px solid #2F88FF;
+}
