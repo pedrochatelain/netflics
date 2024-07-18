@@ -3,17 +3,18 @@ body {
 }
 
 .container {
-    margin-top: 80px;
-    margin-left: 40px;
+    margin-top: 100px;
+    margin-left: 60px;
 }
 
 h1 {
-    font-size: 28px;
+    margin-bottom: 0;
 }
 
 .notificacion {
-    font-size: 14px;
-    margin-bottom: 20px;
+    /* font-size: 18px; */
+    border: 1px solid #1E1E1E;
+    margin-top: 8px;
     border-radius: 10px;
     display: flex;
     background-color: #1E1E1E;
@@ -41,14 +42,16 @@ h1 {
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    border: 1px solid #2F88FF;
+    border: none;
+    border: 2px solid #2F88FF;
     color: white;
     border-radius: 10px;
     align-self: center;
     height: 35px;
     margin-right: 20px;
     margin-left: 10px;
-    background-color: #1E1E1E;
+    background-color: #2F88FF;
+    /* font-size: 14px; */
     
     /* background-color: black; */
 }
@@ -58,11 +61,40 @@ h1 {
 }
 
 .notificacion button:hover {
-    background-color: #2F88FF;
+    /* background-color: white; */
     cursor: pointer;
-    /* border: 2px solid white; */
+    border: 2px solid white;
 }
 
-.ayer {
-    margin-top: 44px;
+.recien, .hace-unas-horas, .ayer, .una-semana-atras {
+    margin-bottom: 50px;
 }
+
+.hace-unas-horas, .ayer, .una-semana-atras {
+    font-weight: lighter;
+}
+
+.hace-unas-horas h1, .ayer h1, .una-semana-atras h1 {
+    font-weight: lighter;
+}
+
+.ayer .notificacion, .una-semana-atras .notificacion, .hace-unas-horas .notificacion {
+    background-color: #100F0F;
+}
+
+.ayer .mat-icon, .una-semana-atras .mat-icon, .hace-unas-horas .mat-icon {
+    color: #2f2f2f;
+}
+
+.notificacion:hover {
+    cursor: default;
+    /* transition-property: border;
+    transition-duration: .4s;
+    border: 1px solid white; */
+}
+
+/* .notificacion:not(:hover) {
+    transition-property: border;
+    transition-duration: .2s;
+    border: 1px solid #1E1E1E;
+} */
