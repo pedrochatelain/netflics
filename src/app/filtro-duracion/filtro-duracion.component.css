@@ -1,18 +1,20 @@
 body {
-    position: absolute;
-    margin: 0;
-    margin-top: 10px;
+    height: 34px;
+    /* margin-bottom: 20px; */
 }
 
 .btn-duracion {
-    border-radius: 10px;
-    border: 2px solid #1f1f1f;
+    border-radius: 30px;
+    border: 1px solid #1f1f1f;
     background-color: #1f1f1f;
     width: fit-content;
     display: flex;
     align-items: center;
     padding: 9px;
     justify-items: center;
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .btn-duracion mat-icon {
@@ -21,34 +23,50 @@ body {
 }
 
 .btn-duracion p {
+    font-size: 14px;
     margin: 0;
     margin-top: 3px;
 }
 
 .btn-duracion:hover, .opcion:hover {
-    border: 2px solid #2F88FF;
     cursor: pointer;
 }
 
+.btn-duracion:hover {
+    border: 1px solid #2F88FF;
+}
+
+.opcion:hover {
+    border: 1px solid #2F88FF;
+}
+
 .opcion {
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 14px;
     cursor: pointer;
     background-color: #1f1f1f;
     padding: 14px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 200px;
-    /* border: 2px solid red; */
+    margin-top: 8px;
+    border: 1px solid #1f1f1f;
     opacity: 1;
 }
 
 .display-none {
-    /* display: none; */
+    display: none;
+}
+
+.opacity-zero {
     opacity: 0;
 }
 
 .disp {
     opacity: 1;
     transition: opacity 0.4s linear;
-
 }
+
+.opciones {
+    margin-top: 10px;
+}
+

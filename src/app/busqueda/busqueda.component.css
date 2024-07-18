@@ -6,7 +6,7 @@ body {
     margin-top: 80px;
 }
 
-.buscador-and-filtros {
+.container-buscador {
     display: flex;
     justify-content: center;
     background-color: hsl(0, 0%, 12%);
@@ -17,66 +17,99 @@ body {
     width: 100%;
     height: 80px;
     border: none;
+    outline: none;
     font-size: 36px;
     color: white;
     caret-color: #2F88FF;
-    padding-left: 40px;
+    padding-left: 30px;
 }
 
-.btn-filtros {
-    font-size: 15px;
+.btn-activar-filtros {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;    
     cursor: pointer;
     color: white;
-    width: 180px;
-    background-color: #2F88FF;
-    border-radius: 10px;
-    border: none;
-    border: 2px solid #2F88FF;
-    margin: 0;
-    margin-right: 20px;
-    align-self: center;
-    height: 40px;
+    background-color: #1f1f1f;
+    border-radius: 4px;
+    border: 1px solid #1f1f1f;
 }
 
-.btn-filtros:hover {
-    border: 2px solid white;
+.btn-activar-filtros p {
+    font-size: 16px;
+    margin-left: 10px;
+    padding-right: 4px;
+}
+
+.btn-activar-filtros:hover {
+    transition-property: border;
+    transition-duration: .4s;
+    border: 1px solid white;
+}
+
+.btn-activar-filtros:not(:hover) {
+    transition-property: border;
+    transition-duration: .2s;
+    border: 1px solid #1f1f1f;
 }
 
 .filtro {
+    align-self: center;
     height: fit-content;
     display: flex;
-    border: 2px solid #1f1f1f;
+    border: 1px solid #1f1f1f;
     margin-top: 10px;
     margin-right: 20px;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 30px;
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #1f1f1f;
 }
 
 .filtro p {
+    font-size: 14px;
+    align-self: center;
+    padding-left: 10px;
     margin: 0;
-    margin-top: 3px;
+    /* margin-top: 3px; */
     /* margin-right: 10px; */
 }
 
 .filtro:hover {
-    border: 2px solid #2F88FF;
+    border: 1px solid white;
     cursor: pointer;
 }
 
-.filtros {
-    margin-left: 40px;
+.container-filtros {
+    align-items: center;
     display: flex;
 }
 
 .filtro mat-icon {
+    transform: scale(.8);
     margin-left: 10px;
+    /* padding-bottom: 20px; */
+}
+
+.visibility-hidden {
+    visibility: hidden;
+    width: 0;
+}
+
+.border-blue {
+    border: 1px solid #2F88FF;
+}
+
+.icon-search-input {
+    transform: scale(1.6);
+    color: #6b6b6b;
+    align-self: center;
+    margin-left: 30px;
 }
 
 .display-none {
     display: none;
-}
-
-.border-blue {
-    border: 2px solid #2F88FF;
 }
