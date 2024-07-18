@@ -1,5 +1,6 @@
 <body>
-    <h1>{{title}}</h1>
+    <h1 *ngIf="title == 'netflics te recomienda'" class="netflics-recomienda"><span>netflics</span> te recomienda</h1>
+    <h1 *ngIf="title != 'netflics te recomienda'">{{title}}</h1>
     <div #container_movies class="container-movies">
 
         <app-movie-continuar-viendo

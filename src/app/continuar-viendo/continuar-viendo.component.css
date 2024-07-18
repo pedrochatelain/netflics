@@ -1,8 +1,8 @@
 body {
     display: grid;
-    height: 300px;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    /* height: 300px; */
+    /* margin-top: 20px; */
+    /* margin-bottom: 50px; */
 }
 
 h1 {
@@ -16,7 +16,7 @@ h1 {
     padding-left: 60px;
     /* margin-left: 20px; */
     display: flex;
-    height: 300px;
+    height: 250px;
     /* width: 100%; */
     /* width: 94vw; */
     overflow-x: hidden;
@@ -65,4 +65,8 @@ h1 {
 
 .display-none {
     display: none;
+}
+
+.netflics-recomienda span {
+    color: #2F88FF;
 }
