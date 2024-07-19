@@ -83,3 +83,40 @@ mat-icon {
 .container-anterior {
     justify-self: left;
 }
+
+@media (max-width: 800px) {
+
+    body {
+        height: fit-content;
+    }
+
+    .container {}
+
+    .movie {
+        padding-left: 14px;
+    }
+
+    .container-next, .container-anterior {
+        width: 30px;
+        height: 230px;
+        align-content: center;
+        align-self: flex-end;
+    }
+
+    .container-next button, .container-anterior button {
+        /* margin-bottom: 230px; */
+    }
+
+    mat-icon {
+        transform: scale(1);
+    }
+
+    .btn-anterior mat-icon {
+        transform: rotate(180deg) scale(1)
+    }
+
+    .btn-anterior {
+        margin-left: 0;
+    }
+
+}

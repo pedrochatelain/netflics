@@ -120,7 +120,7 @@ body {
 @media (max-width: 800px) {
 
     body {
-        align-self: end;
+        width: 100vw;
     }
 
     .mat-badge-content {
@@ -142,6 +142,10 @@ body {
     
     .icon-netflics img {
         justify-self: center;
+    }
+
+    .mi-cuenta img {
+        margin-right: 10px;
     }
 
 }

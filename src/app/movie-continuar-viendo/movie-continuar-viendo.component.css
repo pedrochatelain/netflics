@@ -134,3 +134,23 @@ p {
 .unscale-movie {
     transform: scale(1);
 }
+
+@media (max-width: 800px) {
+    body {
+        width: 230px;
+        height: 140px;
+    }
+
+    h1 {
+        /* height: fit-content; */
+    }
+
+    p {
+        font-size: 14px;
+        margin-left: 4px;
+    }
+
+    #play-layer img {
+        z-index: 1;
+    }
+}

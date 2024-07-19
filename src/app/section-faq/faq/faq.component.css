@@ -97,3 +97,23 @@
         max-height: 200px;
     }
 }
+
+@media (max-width: 800px) {
+
+    .container-faq {
+        width: 80vw;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .header-faq mat-icon {
+        transform: scale(.8);
+    }
+
+}

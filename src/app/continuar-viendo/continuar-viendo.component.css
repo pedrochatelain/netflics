@@ -70,3 +70,51 @@ h1 {
 .netflics-recomienda span {
     color: #2F88FF;
 }
+
+@media (max-width: 800px) {
+
+    body {
+        height: 250px;
+    }
+
+    h1 {
+        height: fit-content;
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-size: 20px;
+        margin-left: 35px;
+    }
+
+    .container-movies {
+        margin-top: 70px;
+        padding-left: 32px;
+    }
+
+    .container-show-less, .container-show-more {
+        width: 30px;
+        height: 160px;
+        /* align-self: flex-end; */
+        margin-bottom: 30px;
+    }
+
+    .container-show-less button, .container-show-more button {
+        height: fit-content;
+        align-self: center;
+        margin-top: 10px;
+        /* margin-bottom: 20px; */
+    }
+
+    .btn-scroll-right mat-icon  {
+        transform: rotate(180deg) scale(.8);
+    }
+
+    .btn-scroll-left mat-icon {
+        transform: scale(.8);
+    }
+
+    .btn-scroll-left mat-icon, .btn-scroll-right mat-icon {
+        /* padding-bottom: 60px; */
+        padding-top: 0;
+    }
+
+}
