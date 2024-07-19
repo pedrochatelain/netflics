@@ -116,3 +116,32 @@ body {
 .mi-cuenta img {
     width: 35px;
 }
+
+@media (max-width: 800px) {
+
+    body {
+        align-self: end;
+    }
+
+    .mat-badge-content {
+        transform: scale(.8);
+    }
+
+    .btn p {
+        display: none;
+    }
+
+    .icon-netflics {
+        display: grid;
+        margin-top: 0;
+    }
+
+    .icon-netflics p {
+        font-size: 14px;
+    }
+    
+    .icon-netflics img {
+        justify-self: center;
+    }
+
+}
