@@ -190,3 +190,49 @@ mat-spinner {
     animation-duration: .3s;
     animation-fill-mode: forwards;
 }
+
+@media (max-width: 800px) {
+
+    input {
+        width: 75vw;
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .container-perfiles {
+        margin-top: 10px;
+        height: fit-content;
+    }
+
+    .perfiles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 70px;
+    }
+
+    .perfil {
+        margin-bottom: 40px;
+    }
+
+    .perfil img {
+        margin: 0;
+        width: 90px;
+        height: 90px;
+        justify-self: center;
+    }
+
+    .perfil h2 {
+        font-size: 20px;
+        width: fit-content;
+        margin-top: 10px;
+    }
+
+    .quien-esta-viendo {
+        margin-top: 20px;
+        font-size: 35px;
+    }
+
+}
