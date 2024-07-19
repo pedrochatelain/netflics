@@ -32,25 +32,25 @@ export class HomeComponent {
     var movies = this.container.nativeElement.querySelectorAll(".movie");
 
     this.container_next.nativeElement.addEventListener('click', () => {
-      this.anterior.nativeElement.classList.remove("display-none")
+      this.container_anterior.nativeElement.classList.remove("display-none")
       this.coef += 100;
       movies.forEach((element:any) => {
         element.style.transform = `translateX(${-this.coef}%)`
       });
       if (this.coef == 200) {
-        this.prox.nativeElement.classList.add("display-none")
+        this.container_next.nativeElement.classList.add('display-none')
       }
     });
 
 
     this.container_anterior.nativeElement.addEventListener('click', () => {
-      this.prox.nativeElement.classList.remove("display-none")
+      this.container_next.nativeElement.classList.remove('display-none')
       this.coef -= 100
       movies.forEach((element:any) => {
         element.style.transform = `translateX(${- this.coef}%)`
       });
       if (this.coef == 0) {
-        this.anterior.nativeElement.classList.add("display-none")
+        this.container_anterior.nativeElement.classList.add("display-none")
       } 
     })
 

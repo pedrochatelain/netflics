@@ -62,13 +62,13 @@ mat-icon {
 }
 
 .display-none {
-    display: none;
+    display: none !important;
 }
 
 .container-next, .container-anterior {
     z-index: 1;
     width: 60px;
-    background-color: rgba(16, 15, 15, .8);
+    background-color: rgba(16, 15, 15, .6);
     /* opacity: .7; */
     display: grid;
     position: absolute;
