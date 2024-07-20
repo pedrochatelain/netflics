@@ -6,7 +6,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="nav-bar.component.css">
 </head>
-<body style="background-color: {{background_color}};">
+<body>
 
 
   <!-- netflics icon -->
@@ -15,8 +15,6 @@
     <p>netflics</p>
   </div>
 
-<div style="display: flex;">
-  <!-- nav buttons-->
   <div class="container-nav-buttons">
     <div #btn_home *ngIf="show_inicio" routerLink="/home" class="btn btn-home">
       <mat-icon fontIcon="home"></mat-icon>
@@ -46,8 +44,6 @@
       <p>Mi cuenta</p>     
     </div>
   </div>
-
-</div>
 
 </body>
 </html>

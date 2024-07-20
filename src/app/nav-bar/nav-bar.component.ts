@@ -8,9 +8,6 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 export class NavBarComponent {
 
   @Input()
-  background_color: String = '#100F0F';
-
-  @Input()
   show_inicio: boolean = true;
 
   @Input()
