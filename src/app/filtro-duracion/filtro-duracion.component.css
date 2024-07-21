@@ -1,6 +1,7 @@
 body {
     height: 34px;
-    /* margin-bottom: 20px; */
+    z-index: 2;
+    position: relative;
 }
 
 .btn-duracion {
@@ -72,4 +73,22 @@ body {
 
 .border-blue {
     border: 1px solid #2F88FF;
+}
+
+@media (max-width: 800px) {
+    body {
+        margin-bottom: 10px;
+    }
+
+    .btn-duracion p {
+        margin-top: 0;
+        align-self: center;
+    }
+
+    .btn-duracion {
+        padding: 4px;
+        padding-left: 14px;
+        padding-right: 8px;
+    }
+
 }

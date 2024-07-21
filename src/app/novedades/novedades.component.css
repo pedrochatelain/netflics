@@ -96,12 +96,13 @@ h1 {
 @media (max-width: 800px) {
 
     .container {
-        margin-left: 35px;
+        margin-left: 30px;
         /* w */
     }
 
     h1 {
         font-size: 20px;
+        width: fit-content;
     }
 
     p {
@@ -112,7 +113,7 @@ h1 {
     }
 
     .notificacion {
-        width: 340px;
+        width: 80vw;
         padding: 8px;
     }
 

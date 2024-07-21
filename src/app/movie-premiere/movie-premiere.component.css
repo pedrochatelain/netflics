@@ -1,6 +1,6 @@
 body {
     display: grid;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     justify-self: center;
     margin-left: 1.3vw;
 }
@@ -56,7 +56,9 @@ img {
 }
 
 h1 {
-    margin-top: 80px;
+    width: fit-content;
+    height: fit-content;
+    /* margin-top: 80px; */
     font-size: 50px;
 }
 
@@ -129,7 +131,7 @@ h1 {
 
 @media (max-width: 800px) {
 
-    body, img, .premier-movie {
+    img, .premier-movie {
         width: 80vw;
         height: 35vh;
     }

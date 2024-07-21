@@ -1,11 +1,13 @@
 body {
     display: grid;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .container {
+    /* overflow-x: hidden; */
     display: flex; 
-    margin-left: 3.2vw;
+    margin-top: 80px;
+    margin-left: 3.5vw;
     margin-bottom: 10px;
 }
 
@@ -86,12 +88,6 @@ mat-icon {
 
 @media (max-width: 800px) {
 
-    body {
-        height: fit-content;
-    }
-
-    .container {}
-
     .movie {
         padding-left: 14px;
     }
@@ -101,10 +97,6 @@ mat-icon {
         height: 230px;
         align-content: center;
         align-self: flex-end;
-    }
-
-    .container-next button, .container-anterior button {
-        /* margin-bottom: 230px; */
     }
 
     mat-icon {

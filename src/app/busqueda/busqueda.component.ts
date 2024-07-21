@@ -27,11 +27,27 @@ export class BusquedaComponent {
   
   @ViewChild("filtro_duracion")
   filtro_duracion!: FiltroDuracionComponent;
+  
+  @ViewChild("container_hint_resultados")
+  container_hint_resultados!: ElementRef;
+  
+  @ViewChild("resultados")
+  resultados!: ElementRef;
+  
+  @ViewChild("movie1")
+  movie1!: ElementRef;
+
+  @ViewChild("movie2")
+  movie2!: ElementRef;
+
+  @ViewChild("serie")
+  serie!: ElementRef;
 
   color = "red";
   selected = 'option2';
   checked = false;
   is_active_btn_activar_filtros = false;
+  timeout_search: string | number | NodeJS.Timeout | undefined;
 
   ngAfterViewInit() {
     this.buscador.nativeElement.focus();
@@ -47,11 +63,21 @@ export class BusquedaComponent {
     this.filtro_mostrar_peliculas.nativeElement.addEventListener('click', () => {
       this.filtro_mostrar_peliculas.nativeElement.classList.toggle('border-blue');
       this.filtro_mostrar_peliculas.nativeElement.querySelector('mat-icon').classList.toggle('visibility-hidden')
+      this.filtro_mostrar_series.nativeElement.classList.remove('border-blue');
+      this.filtro_mostrar_series.nativeElement.querySelector('mat-icon').classList.add('visibility-hidden')
+      this.movie1.nativeElement.classList.remove('display-none')
+      this.movie2.nativeElement.classList.remove('display-none')
+      this.serie.nativeElement.classList.add('display-none')
     })
     // listen filtro_mostrar_series
     this.filtro_mostrar_series.nativeElement.addEventListener('click', () => {
       this.filtro_mostrar_series.nativeElement.classList.toggle('border-blue');
       this.filtro_mostrar_series.nativeElement.querySelector('mat-icon').classList.toggle('visibility-hidden')
+      this.filtro_mostrar_peliculas.nativeElement.classList.remove('border-blue');
+      this.filtro_mostrar_peliculas.nativeElement.querySelector('mat-icon').classList.add('visibility-hidden')
+      this.movie1.nativeElement.classList.add('display-none')
+      this.movie2.nativeElement.classList.add('display-none')
+      this.serie.nativeElement.classList.remove('display-none')
     })
     // listen btn_activar_filtros
     this.btn_activar_filtros.nativeElement.addEventListener('click', () => {
@@ -59,10 +85,36 @@ export class BusquedaComponent {
       this.filtro_mostrar_peliculas.nativeElement.classList.toggle('display-none');
       this.filtro_mostrar_series.nativeElement.classList.toggle('display-none');
       this.filtro_duracion.show_or_hide()
-      if (this.is_active_btn_activar_filtros) {
-        this.btn_activar_filtros.nativeElement.querySelector('p').innerHTML = "Ocultar filtros de búsqueda"
+    })
+    // listen input buscador
+    this.buscador.nativeElement.addEventListener('keyup', () => {
+      clearTimeout(this.timeout_search)
+      var icon = this.container_hint_resultados.nativeElement.querySelector('mat-icon');
+      var text = this.container_hint_resultados.nativeElement.querySelector('h2');
+      var spinner = this.container_hint_resultados.nativeElement.querySelector('mat-spinner');
+      var texto_ingresado = this.buscador.nativeElement.value
+      this.resultados.nativeElement.classList.add('display-none')
+      icon.classList.add('display-none')
+      text.classList.remove('display-none')
+      text.firstChild.nodeValue = `Buscando "${texto_ingresado}"`
+      spinner.classList.remove('display-none')
+      if (texto_ingresado.trim() != '') {
+        this.timeout_search = setTimeout(() => {
+          spinner.classList.add('display-none')
+          icon.classList.remove('display-none')
+          if (texto_ingresado == "error") {
+            text.innerHTML = `No se han encontrado resultados`
+          } else {
+            this.resultados.nativeElement.classList.remove('display-none')
+            icon.classList.add('display-none')
+            text.classList.add('display-none')
+          }
+        }, 2000);
       } else {
-        this.btn_activar_filtros.nativeElement.querySelector('p').innerHTML = "Filtros de búsqueda"
+        this.resultados.nativeElement.classList.add('display-none')
+        icon.classList.remove('display-none')
+        text.innerHTML = 'Los resultados de tu búsqueda aparecerán aquí'
+        spinner.classList.add('display-none')
       }
     })
   }

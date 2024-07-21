@@ -137,8 +137,9 @@ p {
 
 @media (max-width: 800px) {
     body {
-        width: 230px;
-        height: 140px;
+        width: 42vw;
+        height: 24vh;
+        margin-right: 0;
     }
 
     h1 {

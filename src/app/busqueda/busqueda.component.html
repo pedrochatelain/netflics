@@ -6,23 +6,69 @@
 <body>
     <div class="container">
         <div class="container-buscador">
-            <mat-icon fontIcon="search" class="icon-search-input"></mat-icon>
+            <button #btn_activar_filtros class="btn-activar-filtros">
+                <mat-icon fontIcon="manage_search"></mat-icon>
+                <p>Filtros</p>
+            </button>
             <input #buscador class="buscador" placeholder="{{my_placeholder}}" type="text">
         </div>
         <div class="container-filtros">
-            <button #btn_activar_filtros class="btn-activar-filtros">
+            <!-- <button #btn_activar_filtros class="btn-activar-filtros">
                 <mat-icon fontIcon="manage_search"></mat-icon>
                 <p>Filtros de búsqueda</p>
-            </button>
-            <div #filtro_mostrar_peliculas class="filtro display-none border-blue">
-                <p>Mostrar películas</p>
-                <mat-icon #icon_check class="mat-icon" fontIcon="check"></mat-icon>
+            </button> -->
+            <div #filtro_mostrar_peliculas class="filtro display-none">
+                <p>Mostrar solo películas</p>
+                <mat-icon #icon_check class="mat-icon visibility-hidden" fontIcon="check"></mat-icon>
             </div>
-            <div #filtro_mostrar_series class="filtro display-none border-blue">
-                <p>Mostrar series</p>
-                <mat-icon #icon_check class="mat-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="check"></mat-icon>
+            <div #filtro_mostrar_series class="filtro display-none">
+                <p>Mostrar solo series</p>
+                <mat-icon #icon_check class="mat-icon visibility-hidden" aria-hidden="false" aria-label="Example home icon" fontIcon="check"></mat-icon>
             </div>
             <app-filtro-duracion #filtro_duracion></app-filtro-duracion>
         </div>
+    </div>
+    <div #container_hint_resultados class="container-hint-resultados">
+        <h2 class="text-hint-resultados">Los resultados de tu búsqueda aparecerán aquí</h2>
+        <mat-icon fontIcon="search" class="icon-search-input"></mat-icon>
+        <mat-spinner class="mat-spinner-color display-none"></mat-spinner>
+    </div>
+    <div #resultados class="resultados display-none">
+
+        <div #movie1 class="movie1 app-continuar-viendo">
+            <app-movie-continuar-viendo
+                image='assets/simpsons_movie.webp'
+                [show_progression_bar] = false
+                [show_remaining_time]= false
+            ></app-movie-continuar-viendo>
+        </div>
+        
+        <div #movie2 class="movie2 app-continuar-viendo">
+            <app-movie-continuar-viendo
+                image='assets/simpsons_movie2.jfif'
+                [show_progression_bar] = false
+                [show_remaining_time]= false
+            ></app-movie-continuar-viendo>
+        </div>
+
+        <div #serie class="serie app-continuar-viendo">
+            <app-movie-continuar-viendo 
+                image='assets/simpsons_series.jfif'
+                [show_progression_bar] = false
+                [show_remaining_time]= false
+            ></app-movie-continuar-viendo>
+        </div>
+
+        <!-- <app-movie-continuar-viendo
+            image='assets/toystory2.jfif'
+            [show_progression_bar] = false
+            [show_remaining_time]= false
+        ></app-movie-continuar-viendo>
+
+        <app-movie-continuar-viendo
+            image='assets/toystory2.jfif'
+            [show_progression_bar] = false
+            [show_remaining_time]= false
+        ></app-movie-continuar-viendo> -->
     </div>
 </body>
