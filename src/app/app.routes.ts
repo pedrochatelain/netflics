@@ -5,6 +5,7 @@ import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { NovedadesComponent } from './novedades/novedades.component';
 import { PlanesDeSuscripcionComponent } from './planes-de-suscripcion/planes-de-suscripcion.component';
+import { SectionFaqComponent } from './section-faq/section-faq.component';
 import { WatchingMovieComponent } from './watching-movie/watching-movie.component';
 
 export const routes = [
@@ -17,5 +18,6 @@ export const routes = [
     {path: 'login', component: LoginComponent},
     {path: 'mi-cuenta', component: MiCuentaComponent},
     {path: 'movie', component: MovieDetailComponent},
+    {path: 'faq', component: SectionFaqComponent},
 ];
 

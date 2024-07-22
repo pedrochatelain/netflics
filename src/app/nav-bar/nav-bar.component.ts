@@ -43,6 +43,9 @@ export class NavBarComponent {
   @Input()
   is_selected_mi_cuenta: boolean = false;
 
+  @Input()
+  is_selected_faq: boolean = false;
+
   @ViewChild("btn_planes")
   btn_planes!: ElementRef;
 
@@ -60,6 +63,9 @@ export class NavBarComponent {
 
   @ViewChild("btn_mi_cuenta")
   btn_mi_cuenta!: ElementRef;
+  
+  @ViewChild("btn_faq")
+  btn_faq!: ElementRef;
 
   ngAfterViewInit() {
     if (this.is_selected_planes) {
@@ -79,6 +85,9 @@ export class NavBarComponent {
     }
     if (this.is_selected_mi_cuenta) {
       this.btn_mi_cuenta.nativeElement.classList.add("selected")
+    }
+    if (this.is_selected_faq) {
+      this.btn_faq.nativeElement.classList.add("selected")
     }
   }
 
