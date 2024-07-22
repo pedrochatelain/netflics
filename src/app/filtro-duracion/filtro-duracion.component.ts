@@ -7,6 +7,7 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 })
 export class FiltroDuracionComponent {
 
+
   constructor(private eRef: ElementRef) {}
 
   @ViewChild("btn")
@@ -62,6 +63,11 @@ export class FiltroDuracionComponent {
 
   show_or_hide() {
     this.body.nativeElement.classList.toggle('display-none')
+  }
+
+  reset() {
+    this.btn_duracion.nativeElement.querySelector('p').innerHTML = "Duración"
+    this.btn_duracion.nativeElement.classList.remove('border-blue')
   }
 
   @HostListener('document:click', ['$event'])

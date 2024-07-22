@@ -5,6 +5,7 @@ body {
 }
 
 .btn-duracion {
+    margin-right: 20px;
     border-radius: 30px;
     border: 1px solid #1f1f1f;
     background-color: #1f1f1f;
@@ -26,7 +27,6 @@ body {
 .btn-duracion p {
     font-size: 14px;
     margin: 0;
-    margin-top: 3px;
 }
 
 .btn-duracion:hover, .opcion:hover {

@@ -70,7 +70,17 @@ body {
     transform: scale(1.4);
 }
 
+.btn-quitar-filtros mat-icon {
+    margin-left: 0 !important;
+}
+
+.btn-quitar-filtros {
+    background-color: #F51A1A !important;
+    padding-right: 30px !important;
+}
+
 .filtro {
+    z-index: 1;
     align-self: center;
     height: fit-content;
     display: flex;

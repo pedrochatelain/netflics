@@ -13,10 +13,6 @@
             <input #buscador class="buscador" placeholder="{{my_placeholder}}" type="text">
         </div>
         <div class="container-filtros">
-            <!-- <button #btn_activar_filtros class="btn-activar-filtros">
-                <mat-icon fontIcon="manage_search"></mat-icon>
-                <p>Filtros de búsqueda</p>
-            </button> -->
             <div #filtro_mostrar_peliculas class="filtro display-none">
                 <p>Mostrar solo películas</p>
                 <mat-icon #icon_check class="mat-icon visibility-hidden" fontIcon="check"></mat-icon>
@@ -25,7 +21,13 @@
                 <p>Mostrar solo series</p>
                 <mat-icon #icon_check class="mat-icon visibility-hidden" aria-hidden="false" aria-label="Example home icon" fontIcon="check"></mat-icon>
             </div>
-            <app-filtro-duracion #filtro_duracion></app-filtro-duracion>
+            <app-filtro-duracion
+                #filtro_duracion>
+            </app-filtro-duracion>
+            <div #filtro_quitar_filtros class="filtro btn-quitar-filtros display-none">
+                <mat-icon #icon_check class="mat-icon" fontIcon="close"></mat-icon>
+                <p>Quitar filtros</p>
+            </div>
         </div>
     </div>
     <div #container_hint_resultados class="container-hint-resultados">

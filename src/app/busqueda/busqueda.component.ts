@@ -18,6 +18,9 @@ export class BusquedaComponent {
 
   @ViewChild("filtro_mostrar_series")
   filtro_mostrar_series!: ElementRef;
+  
+  @ViewChild("filtro_quitar_filtros")
+  filtro_quitar_filtros!: ElementRef;
 
   @ViewChild("icon_check")
   icon_check!: ElementRef;
@@ -51,14 +54,22 @@ export class BusquedaComponent {
 
   ngAfterViewInit() {
     this.buscador.nativeElement.focus();
-    // listen focus
+    // listen input buscador focus
     this.buscador.nativeElement
     .addEventListener('focus', () => this.my_placeholder = "Escribe una serie o película");
     ;
-    // listen not focused
+    // listen input buscador not focused
     this.buscador.nativeElement
     .addEventListener('blur', () => this.my_placeholder = "Click aquí para buscar");
     ;
+    // listen btn_activar_filtros
+    this.btn_activar_filtros.nativeElement.addEventListener('click', () => {
+      this.is_active_btn_activar_filtros = ! this.is_active_btn_activar_filtros
+      this.filtro_mostrar_peliculas.nativeElement.classList.toggle('display-none');
+      this.filtro_mostrar_series.nativeElement.classList.toggle('display-none');
+      this.filtro_quitar_filtros.nativeElement.classList.toggle('display-none')
+      this.filtro_duracion.show_or_hide()
+    })
     // listen filtro_mostrar_peliculas
     this.filtro_mostrar_peliculas.nativeElement.addEventListener('click', () => {
       this.filtro_mostrar_peliculas.nativeElement.classList.toggle('border-blue');
@@ -79,12 +90,16 @@ export class BusquedaComponent {
       this.movie2.nativeElement.classList.add('display-none')
       this.serie.nativeElement.classList.remove('display-none')
     })
-    // listen btn_activar_filtros
-    this.btn_activar_filtros.nativeElement.addEventListener('click', () => {
-      this.is_active_btn_activar_filtros = ! this.is_active_btn_activar_filtros
-      this.filtro_mostrar_peliculas.nativeElement.classList.toggle('display-none');
-      this.filtro_mostrar_series.nativeElement.classList.toggle('display-none');
-      this.filtro_duracion.show_or_hide()
+    // listen btn quitar filtros
+    this.filtro_quitar_filtros.nativeElement.addEventListener('click', () => {
+      this.filtro_mostrar_peliculas.nativeElement.classList.remove('border-blue');
+      this.filtro_mostrar_peliculas.nativeElement.querySelector('mat-icon').classList.add('visibility-hidden')
+      this.filtro_mostrar_series.nativeElement.classList.remove('border-blue');
+      this.filtro_mostrar_series.nativeElement.querySelector('mat-icon').classList.add('visibility-hidden')
+      this.filtro_duracion.reset()
+      this.movie1.nativeElement.classList.remove('display-none')
+      this.movie2.nativeElement.classList.remove('display-none')
+      this.serie.nativeElement.classList.remove('display-none')
     })
     // listen input buscador
     this.buscador.nativeElement.addEventListener('keyup', () => {
