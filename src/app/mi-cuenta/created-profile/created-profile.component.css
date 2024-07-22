@@ -9,7 +9,7 @@ body {
     font-size: 18px;
     backdrop-filter: blur(4px);
     background-color: rgba(30, 30, 30, .8);
-    margin-left: 119px;
+    margin-left: 150px;
     position: absolute;
 }
 
@@ -28,7 +28,7 @@ body {
     width: 300px;
     display: flex;
     align-items: center;
-    padding: 28.3px;
+    padding: 28px;
 }
 
 
@@ -46,8 +46,10 @@ body {
     padding-top: 20px;
     display: grid;
     grid-column: 1fr;
-    width: fit-content;
-    height: fit-content;
+    width: 200px;
+    height: 140px;
+    /* width: fit-content; */
+    /* height: fit-content; */
 }
 
 
@@ -72,6 +74,7 @@ body {
 }
 
 .img-perfil {
+    border-radius: 100px;
     width: 60px;
     justify-self: center;
 }
@@ -83,20 +86,68 @@ body {
 
 .perfil h3 {
     font-weight: normal;
-    margin-top: 80px;
+    margin-top: 65px;
 }
 
 .perfil h4 {
-    margin-top: 100px;
+    margin-top: 90px;
     font-weight: bold;
     color: #2F88FF;
 }
 
 .display-none {
-    display: none;
+    display: none !important;
 }
 
 .selected-profile {
     background-color: rgba(30, 30, 30, .8) !important;   
     border-radius: 20px 0 0 20px !important;
+}
+
+@media (max-width: 800px) {
+    .perfil h3 {
+        font-size: 14px;
+        margin-top: 50px;
+    }
+
+    .perfil h4 {
+        margin-top: 70px;
+        font-size: 12px;
+    }
+
+    .img-perfil {
+        width: 45px;
+    }
+
+    .perfil {
+        height: 100px;
+        width: 150px;
+    }
+
+    .container-actions {
+        display: flex;
+        margin-left: 0;
+        margin-top: 120px;
+        width: 150px;
+        border-radius: 0;
+        border-radius: 0px 0px 20px 20px
+    }
+
+    .container-actions mat-icon {
+        margin-right: 0;
+    }
+    
+    .delete-user, .remove-admin {
+        display: grid;
+        justify-items: center;
+        padding: 10px;
+    }
+
+    .delete-user p, .remove-admin p {
+        display: none;
+    }
+
+    .selected-profile {
+        border-radius: 20px 20px 0px 0px !important;
+    }
 }

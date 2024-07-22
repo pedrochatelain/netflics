@@ -13,6 +13,15 @@ export class CreatedProfileComponent {
   @ViewChild("container_actions")
   container_actions!: ElementRef;
 
+  @Input()
+  is_admin: boolean = false;
+
+  @Input()
+  src_image: String = 'assets/icon_mi_cuenta.svg'
+
+  @Input()
+  username: String = "John Doe"
+
   constructor(private eRef: ElementRef) {}
 
   ngAfterViewInit() {

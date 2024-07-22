@@ -6,24 +6,21 @@ body {
 
 h2 {
     font-size: 25px;
-    font-weight: normal;
-    width: 300px;
+    font-weight: lighter;
+    margin-bottom: 0;
 }
 
 .container-settings {
     display: grid;
-    width: 80vw;
-    height: 400px;
-    justify-self: center;
+    margin-left: 60px;
 }
 
 .container-idioma, .container-plan {
-    display: flex;
     align-items: center;
-
 }
 
-.container-plan {
+.plan-and-button {
+    display: flex;
 }
 
 .dropdown-idioma {
@@ -31,23 +28,43 @@ h2 {
     align-items: center;
 }
 
-.dropdown-idioma h3 {
-}
-
 .container-user {
     justify-self: center;
-    width: inherit;
     display: grid;
-    height: fit-content;
+}
+
+.btn-logout {
+    margin-top: 10px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2F88FF;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.container-user button:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.container-user button p {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.container-user button mat-icon {
+    color: #2F88FF;
 }
 
 .container-user h1 {
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 0;
     width: fit-content;
-    justify-self: center;
-}
-
-.container-user h1, .img-user {
-    /* grid-row-start: 1; */
 }
 
 .img-user {
@@ -55,23 +72,76 @@ h2 {
     width: 100px;
 }
 
-.container-perfiles-creados, .perfiles-creados {
+.container-perfiles-creados, .container-favoritos, .container-idioma, .container-plan {
+    margin-bottom: 35px;
+}
+
+.favoritos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.perfiles-creados {
     display: flex;
 }
 
-
-
 .btn-actualizar-plan {
-    font-size: 18px;
-    border: 0;
-    padding: 14px;
+    align-self: center;
+    font-size: 16px;
+    border: 1px solid #2F88FF;
+    padding: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
     height: fit-content;
     border-radius: 10px;
     background-color: #2F88FF;
     color: white;
-    margin-left: 40px;
+    margin-left: 50px;
+}
+
+.btn-actualizar-plan:hover {
+    cursor: pointer;
+    border: 1px solid white;
 }
 
 app-created-profile {
     height: fit-content;
+}
+
+@media (max-width: 800px) {
+
+    .container-settings {
+        margin-left: 30px;
+    }
+
+    .perfiles-creados {
+        flex-wrap: wrap;
+    }
+
+    .container-perfiles-creados, .container-favoritos, .container-idioma, .container-plan {
+        margin-bottom: 20px;
+    }
+
+    .container-user img {
+        width: 60px;
+    }
+
+    .container-user h1 {
+        font-size: 20px;
+        justify-self: center;
+    }
+
+    .btn-logout {
+        padding: 4px;
+        margin-bottom: 40px;
+    }
+
+    .btn-logout p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
 }

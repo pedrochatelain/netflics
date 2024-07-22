@@ -7,13 +7,25 @@
     <div class="container-user">
         <img class="img-user" src="../../assets/icon_mi_cuenta.svg" alt="">
         <h1>Pedro Chatelain</h1>
+        <button class="btn-logout" routerLink="/login">
+            <mat-icon fontIcon="logout"></mat-icon>
+            <p>Cerrar sesión</p>
+        </button>
     </div>
     <div class="container-settings">
         <div class="container-perfiles-creados">
             <h2>Perfiles creados</h2>
             <div class="perfiles-creados">
-                <app-created-profile></app-created-profile>
-                <app-created-profile></app-created-profile>
+                <app-created-profile
+                    [is_admin] = true
+                    src_image = 'assets/CynthiaWarren.png'
+                    username = "Cynthia Warren"
+                ></app-created-profile>
+                <app-created-profile [is_admin] = true></app-created-profile>
+                <app-created-profile
+                    username="Larry Turner"
+                    src_image="assets/LarryTurner.png"
+                ></app-created-profile>
 
             </div>
         </div>
@@ -27,8 +39,24 @@
         </div>
         <div class="container-plan">
             <h2>Plan actual</h2>
-            <h3>Advanced</h3>
-            <button class="btn-actualizar-plan">Actualizar plan</button>
+            <div class="plan-and-button">
+                <h3>Advanced</h3>
+                <button class="btn-actualizar-plan" routerLink="/planes">Actualizar plan</button>
+            </div>
+        </div>
+        <div class="container-favoritos">
+            <h2>Mis series y películas favoritas</h2>
+            <div class="favoritos">
+                <app-movie-continuar-viendo
+                    image="assets/bugs_life.jfif"
+                ></app-movie-continuar-viendo>
+                <app-movie-continuar-viendo
+                    image="assets/toystory.png"
+                ></app-movie-continuar-viendo>
+                <app-movie-continuar-viendo
+                    image="assets/gravity.jpg"
+                ></app-movie-continuar-viendo>
+            </div>
         </div>
     </div>
 </body>
