@@ -126,3 +126,13 @@ mat-icon {
 .premium {
     color: #FFD700;
 }
+
+@media (max-width: 800px) {
+
+    body {
+        margin: 0;
+        margin-top: 6vh
+        /* height: 300px; */
+    }
+
+}

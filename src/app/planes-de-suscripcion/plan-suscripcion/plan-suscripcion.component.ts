@@ -50,6 +50,7 @@ export class PlanSuscripcionComponent {
   clickout(event:Event) {
     if(this.eRef.nativeElement.contains(event.target)) {
       this.container_button.nativeElement.classList.remove('display-none')
+      this.eRef.nativeElement.scrollIntoView({behavior: 'smooth'});
       this.container_button.nativeElement.classList.add('animation-enable-elegir-plan')
       this.eRef.nativeElement.querySelector('body').classList.add('border-blue')
       this.eRef.nativeElement.querySelector('body').classList.add('selected')

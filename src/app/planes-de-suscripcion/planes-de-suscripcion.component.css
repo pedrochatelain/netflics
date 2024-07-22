@@ -16,3 +16,11 @@ app-plan-suscripcion {
     height: fit-content;
     width: fit-content;
 }
+
+@media (max-width: 800px) {
+
+    body {
+        flex-wrap: wrap;
+    }
+
+}
