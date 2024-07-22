@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-watching-movie',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./watching-movie.component.css']
 })
 export class WatchingMovieComponent {
+
+  @Input()
+  is_trailer : boolean = false;
+
+  constructor(private _location: Location) {}
+
+  backClicked() {
+    this._location.back();
+  }
 
 }
