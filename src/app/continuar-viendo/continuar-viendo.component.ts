@@ -28,6 +28,9 @@ export class ContinuarViendoComponent {
   @Input()
   src_movie_five: String = '';
 
+  @Input()
+  is_watching: boolean = false;
+
   @ViewChild("container_show_more")
   container_show_more!: ElementRef;
   

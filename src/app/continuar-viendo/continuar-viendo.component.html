@@ -3,7 +3,7 @@
     <h1 *ngIf="title != 'netflics te recomienda'">{{title}}</h1>
     <div #container_movies class="container-movies">
 
-        <div class="app-continuar-viendo">
+        <div class="app-continuar-viendo" [routerLink]="is_watching ? ['/watch'] : []">
             <app-movie-continuar-viendo
                 image="{{src_movie_one == '' ? 'assets/toystory.png' : src_movie_one}}"
                 [show_progression_bar] = "continuar_viendo ? true : false"
@@ -11,7 +11,7 @@
             ></app-movie-continuar-viendo>
         </div>
         
-        <div class="app-continuar-viendo">
+        <div class="app-continuar-viendo" [routerLink]="is_watching ? ['/watch'] : []">
             <app-movie-continuar-viendo
                 image="{{src_movie_two == '' ? 'assets/monsters_inc.png' : src_movie_two}}"
                 [show_progression_bar] = "continuar_viendo ? true : false"
@@ -19,7 +19,7 @@
             ></app-movie-continuar-viendo>
         </div>
 
-        <div class="app-continuar-viendo">
+        <div class="app-continuar-viendo" [routerLink]="is_watching ? ['/watch'] : []">
             <app-movie-continuar-viendo
                 image="{{src_movie_three == '' ? 'assets/ratatouille.png' : src_movie_three}}"
                 [show_progression_bar] = "continuar_viendo ? true : false"
@@ -27,7 +27,7 @@
             ></app-movie-continuar-viendo>
         </div>
 
-        <div class="app-continuar-viendo">
+        <div class="app-continuar-viendo" [routerLink]="is_watching ? ['/watch'] : []">
             <app-movie-continuar-viendo
                 image="{{src_movie_four == '' ? 'assets/bugs_life.jfif' : src_movie_four}}"
                 [show_progression_bar] = "continuar_viendo ? true : false"
@@ -35,7 +35,7 @@
             ></app-movie-continuar-viendo>
         </div>
         
-        <div class="app-continuar-viendo">
+        <div class="app-continuar-viendo" [routerLink]="is_watching ? ['/watch'] : []">
             <app-movie-continuar-viendo
                 image="{{src_movie_five == '' ? 'assets/cars.webp' : src_movie_five}}"
                 [show_progression_bar] = "continuar_viendo ? true : false"
