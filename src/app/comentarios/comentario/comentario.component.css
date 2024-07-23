@@ -1,6 +1,6 @@
 body {
     font-size: 40px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 h1 {
@@ -25,15 +25,28 @@ h1 {
 }
 
 .container-comentario {
-    display: flex;
+    display: grid;
     height: fit-content;
     width: 700px;
     /* background-color: rebeccapurple; */
 }
 
+.username-and-date, .container-photo-profile {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.username-and-date {
+    align-content: center;
+    width: fit-content;
+    margin-left: 70px;
+}
+
 .content {
     margin-top: 4px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    /* grid-row-start: 1;
+    grid-column-start: 1; */
 }
 
 .container-photo-profile {
@@ -74,5 +87,53 @@ h1 {
 }
 
 .not-painted-star {
+
+}
+
+@media (max-width: 800px) {
+
+    .container-comentario {
+        display: grid;
+        width: fit-content;
+    }
+
+    .content {
+        display: grid;
+        margin-left: 0;
+        width: fit-content;
+    }
+
+    .username-and-date, .container-photo-profile {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+
+    .username-and-date {
+        margin-left: 60px;
+        align-content: center;
+        width: fit-content;
+    }
+
+    .container-photo-profile {
+        height: 50px;
+    }
+
+    .container-photo-profile img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .comment {
+        font-size: 17px;
+        width: 80vw;
+    }
+
+    .username {
+        font-size: 16px;
+    }
+
+    .date {
+        font-size: 14px;
+    }
 
 }

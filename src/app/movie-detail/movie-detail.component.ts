@@ -35,12 +35,16 @@ export class MovieDetailComponent {
   @Input()
   src_image_episode_2: String = '';
 
+  @Input()
+  mobile_src_image: String = '';
+
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.route.data.subscribe(v => {
       this.is_series =  v['is_serie']
       this.src_image = v['src_image']
+      this.mobile_src_image = v['mobile_src_image']
       this.title = v['title']
       this.description = v['description']
       this.src_image_episode_1 = v['src_image_episode_1']

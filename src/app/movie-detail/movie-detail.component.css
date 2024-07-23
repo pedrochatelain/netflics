@@ -45,22 +45,26 @@ body {
 }
 
 .btn-trailer {
-    margin-top: 350px;
+    margin-left: 20px;
     padding-right: 25px;
+    height: 60px;
     background-color: rgba(30, 30, 30, .8);
     border: 2px solid transparent;
-    height: 50px;
+    /* height: 50px; */
 }
 
 .btn-reproducir {
-    margin-top: 180px;
+    margin-left: 50px;
     background-color: #2F88FF;
     height: 60px;
     border: 2px solid #2F88FF;
 }
 
+.btn-reproducir p {
+    padding-right: 20px;
+}
+
 .btn-reproducir, .btn-trailer {
-    margin-left: 50px;
     display: flex;
     width: fit-content;
     border-radius: 20px;
@@ -80,7 +84,7 @@ body {
 }
 
 .btn-reproducir img {
-    margin-left: 20px;
+    /* margin-left: 20px; */
     margin-right: 20px;
     transform: scale(1.4);
 }
@@ -205,4 +209,119 @@ mat-spinner {
 .episodios {
     display: flex;
     /* margin-top: 200px; */
+}
+
+.container-buttons-play {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    width: fit-content;
+    align-self: flex-end;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+
+
+@media (max-width: 800px) {
+
+    body {
+        /* display: grid; */
+    }
+
+    .image-movie-container img {
+        display: none;
+    }
+
+    .mobile-image-movie-container {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        display: block;
+    }
+    
+    .mobile-image-movie-container img {
+        width: 100vw;
+        height: 85vh;
+    }
+
+    .movie-description {
+        width: 80vw;
+    }
+
+    .title-and-description {
+        margin-left: 20px;
+        margin-top: 0;
+    }
+
+    .title-and-description h1 {
+        font-size: 34px;
+    }
+
+    .title-and-description p {
+        font-size: 17px;
+    }
+
+    .btn-reproducir {
+        margin: 0;
+        margin-left: 20px;
+        padding: 0;
+        height: fit-content;
+        padding: 10px;
+    }
+
+    .btn-reproducir p {
+        padding-right: 5px;
+        padding-left: 10px;
+    }
+    
+    .btn-reproducir p, .btn-trailer p {
+        font-size: 16px;
+        margin: 0;
+    }
+    
+    .btn-reproducir img {
+        transform: scale(1);
+        margin: 0;
+    }
+    
+    .container-buttons-play {
+        margin-bottom: 60px;
+    }
+
+    .btn-trailer {
+        margin: 0;
+        margin-left: 20px;
+        padding: 20px;
+    }
+
+    .blur-filter {
+        align-self: flex-start;
+        height: 200px;
+        width: 70vw;
+    }
+
+    .btn-add-favorites {
+        margin-right: 30px;
+    }
+
+    .btn-add-favorites p {
+        display: none;
+    }
+
+    .btn-add-favorites mat-icon {
+        margin-right: 0;
+    }
+
+    .container-episodios {
+        margin-left: 20px;
+        width: fit-content;
+    }
+
+    .container-episodios h1 {
+        font-size: 26px;
+    }
+
+    .episodios {
+        /* flex-wrap: wrap; */
+    }
+
 }

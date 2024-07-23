@@ -21,6 +21,7 @@ export const routes = [
     {path: 'series/the_acolyte', component: MovieDetailComponent, data:{
         is_serie: true,
         src_image: 'assets/the_acolyte_movie_detail.jpg',
+        mobile_src_image: 'assets/the_acolyte_mobile.jpg',
         title: 'The Acolyte',
         description: 'A former Padawan reunites with her Jedi Master to investigate a series of crimes but discovers the forces they confront are more sinister than they ever anticipated',
         src_image_episode_1: 'assets/the_acolyte_episode_1.webp',

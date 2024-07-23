@@ -18,17 +18,22 @@
     <div class="image-movie-container">
         <img src="{{src_image}}" alt="">
     </div>
+    <div class="mobile-image-movie-container display-none">
+        <img src="{{mobile_src_image}}" alt="">
+    </div>
     <div class="title-and-description">
         <h1>{{title}}</h1>
         <p class="movie-description">{{description}}</p>
     </div>
-    <button class="btn-reproducir" routerLink="/watch">
-        <p>Reproducir</p>
-        <img src="../../assets/icon_play_movie.svg" alt="">
-    </button>
-    <button class="btn-trailer" routerLink="/watch">
-        <p>Ver trailer</p>
-    </button>
+    <div class="container-buttons-play">
+        <button class="btn-reproducir" routerLink="/watch">
+            <img src="../../assets/icon_play_movie.svg" alt="">
+            <p>Reproducir</p>
+        </button>
+        <button class="btn-trailer" routerLink="/watch">
+            <p>Ver trailer</p>
+        </button>
+    </div>
     <div *ngIf="is_series" class="container-episodios">
         <h1>Episodios</h1>
         <button>
@@ -50,6 +55,7 @@
                 [show_progression_bar] = false
                 [show_remaining_time]= false
             ></app-movie-continuar-viendo>
+            
         </div>
         </div>
 </body>
