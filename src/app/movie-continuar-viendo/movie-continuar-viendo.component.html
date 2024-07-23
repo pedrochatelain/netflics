@@ -5,6 +5,10 @@
             <div id="elapsed"></div>
         </div>
     </div>
+    <div *ngIf="is_episode" class="container-episode-description">
+        <p class="title-episode-description">Episodio 1</p>
+        <p class="episode-description">{{episode_description}}</p>
+    </div>
     <p *ngIf="show_remaining_time">75 minutos para terminarla</p>
     <div id="play-layer">
         <img #play_button src="assets/icon_watch.svg" class="display_none" alt="">

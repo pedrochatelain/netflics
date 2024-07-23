@@ -1,6 +1,6 @@
 <body>
-    <div (click)="backClicked()" class="back-arrow-and-title">
-        <mat-icon class="mat-icon back-button" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_back"></mat-icon>  
+    <div class="back-arrow-and-title">
+        <mat-icon (click)="backClicked()" class="mat-icon back-button" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_back"></mat-icon>  
         <h1 class="title">Deadpool & Wolverine</h1>
     </div>
     <p *ngIf="is_trailer" class="trailer">Trailer</p>

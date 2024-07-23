@@ -22,6 +22,12 @@ export class MovieContinuarViendoComponent {
   @Input()
   show_remaining_time: boolean = false;
 
+  @Input()
+  is_episode: boolean = false;
+
+  @Input()
+  episode_description: String = ''
+
   ngAfterViewInit() {
     this.play_button.nativeElement
     .addEventListener('mouseover', () => {

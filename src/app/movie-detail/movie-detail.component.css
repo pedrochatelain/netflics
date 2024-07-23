@@ -176,3 +176,33 @@ mat-spinner {
         opacity: 1;
     }
 }
+
+.container-episodios {
+    margin-left: 40px;
+}
+
+.container-episodios button {
+    display: flex;
+    align-items: center;
+    border: 1px solid #1E1E1E;
+    background-color: #1E1E1E;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.container-episodios button:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.container-episodios button p {
+    font-size: 16px;
+    margin: 0;
+    margin-right: 18px;
+}
+
+.episodios {
+    display: flex;
+    /* margin-top: 200px; */
+}

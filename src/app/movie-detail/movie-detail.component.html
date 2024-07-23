@@ -16,11 +16,11 @@
     </button>
     <div class="blur-filter"></div>
     <div class="image-movie-container">
-        <img src="assets/deadpoolandwolverine.webp" alt="">
+        <img src="{{src_image}}" alt="">
     </div>
     <div class="title-and-description">
-        <h1>Deadpool & Wolverine</h1>
-        <p class="movie-description">Six years after the events of Deadpool 2 (2018),[2] Wade Wilson lives a quiet life, having left his time as the mercenary Deadpool behind him, until the Time Variance Authority (TVA)—a bureaucratic organization that exists outside of time and space and monitors the timeline—pulls him into a new mission. With his home universe facing an existential threat, Wilson reluctantly joins an even more reluctant Wolverine on a mission that will change the history of the Marvel Cinematic Universe</p>
+        <h1>{{title}}</h1>
+        <p class="movie-description">{{description}}</p>
     </div>
     <button class="btn-reproducir" routerLink="/watch">
         <p>Reproducir</p>
@@ -29,7 +29,31 @@
     <button class="btn-trailer" routerLink="/watch">
         <p>Ver trailer</p>
     </button>
+    <div *ngIf="is_series" class="container-episodios">
+        <h1>Episodios</h1>
+        <button>
+            <p>Temporada 1</p>
+            <mat-icon fontIcon="keyboard_arrow_down"></mat-icon>
+        </button>
+        <div class="episodios">
+            <app-movie-continuar-viendo 
+                [is_episode] = true
+                episode_description = "Fusce accumsan arcu nulla. Aliquam aliquam id neque eget vulputate. Etiam volutpat placerat nunc, nec mattis eros aliquam in. Duis"
+                image='{{src_image_episode_1}}'
+                [show_progression_bar] = false
+                [show_remaining_time]= false
+            ></app-movie-continuar-viendo>
+            <app-movie-continuar-viendo 
+                [is_episode]=true
+                episode_description = "Fusce accumsan arcu nulla. Aliquam aliquam id neque eget vulputate. Etiam volutpat placerat nunc, nec mattis eros aliquam in. Duis"
+                image='{{src_image_episode_2}}'
+                [show_progression_bar] = false
+                [show_remaining_time]= false
+            ></app-movie-continuar-viendo>
+        </div>
+        </div>
 </body>
+
 
 <app-comentarios></app-comentarios>
 
