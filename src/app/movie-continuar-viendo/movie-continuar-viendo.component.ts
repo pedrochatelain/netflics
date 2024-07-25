@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-movie-continuar-viendo',
@@ -29,6 +29,12 @@ export class MovieContinuarViendoComponent {
   episode_description: String = ''
 
   ngAfterViewInit() {
+    if (window.innerWidth <= 800 && this.show_progression_bar) {
+      this.play_button.nativeElement.classList.remove("display_none")
+    } else {
+      this.play_button.nativeElement.classList.add("display_none")
+    }
+
     this.play_button.nativeElement
     .addEventListener('mouseover', () => {
       this.play_button.nativeElement.classList.remove("display_none")      
@@ -63,4 +69,15 @@ export class MovieContinuarViendoComponent {
     });
   }
 
+  
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    if (window.innerWidth <= 800 && this.show_progression_bar) {
+      this.play_button.nativeElement.classList.remove("display_none")
+    } else {
+      this.play_button.nativeElement.classList.add("display_none")
+    }
+  }
+  
 }
+
