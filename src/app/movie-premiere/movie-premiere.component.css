@@ -131,9 +131,21 @@ h1 {
 
 @media (max-width: 800px) {
 
+    body {
+        margin-left: 0;
+    }
+
+    .blur-filter {
+        width: 130px;
+    }
+
     img, .premier-movie {
-        width: 80vw;
-        height: 35vh;
+        width: 82vw;
+        height: 32vh;
+    }
+
+    .premier-movie {
+        border: none !important;
     }
 
     .label {

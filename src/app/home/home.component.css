@@ -88,15 +88,18 @@ mat-icon {
 
 @media (max-width: 800px) {
 
+    .container {
+        overflow-x: scroll;
+        margin-left: 35px;
+    }
+
     .movie {
-        padding-left: 14px;
+        padding-right: 14px;
+        transform: translateX(0);
     }
 
     .container-next, .container-anterior {
-        width: 30px;
-        height: 230px;
-        align-content: center;
-        align-self: flex-end;
+        display: none;
     }
 
     mat-icon {
