@@ -163,4 +163,8 @@ p {
     #play-layer img {
         z-index: 1;
     }
+
+    #progression-bar {
+        height: 6px;
+    }
 }
