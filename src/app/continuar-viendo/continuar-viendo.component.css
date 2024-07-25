@@ -87,7 +87,10 @@ h1 {
 
     .container-movies {
         margin-top: 70px;
-        padding-left: 32px;
+        margin-left: 32px;
+        padding-left: 0;
+        overflow-x: scroll;
+        height: 190px;
     }
 
     .container-show-less, .container-show-more {
@@ -96,6 +99,7 @@ h1 {
         margin-top: 55px;
         /* align-self: flex-end; */
         /* margin-bottom: 30px; */
+        display: none;
     }
 
     .container-show-less button, .container-show-more button {
