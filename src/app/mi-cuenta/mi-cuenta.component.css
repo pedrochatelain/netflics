@@ -144,4 +144,23 @@ app-created-profile {
         font-size: 18px;
     }
 
+    .container-favoritos {
+        margin-left: 0;
+    }
+
+    .container-favoritos h2 {
+        margin-bottom:  10px;
+    }
+
+    .favoritos {
+        width: 90vw;
+        height: 200px;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+
+    .movie {
+        margin-right: 10px;
+    }
+
 }

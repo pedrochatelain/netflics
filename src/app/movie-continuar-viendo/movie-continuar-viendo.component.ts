@@ -40,7 +40,7 @@ export class MovieContinuarViendoComponent {
 
     this.movie.nativeElement
     .addEventListener('mouseover', () => {
-      if (this.show_progression_bar) {
+      if (this.show_progression_bar || this.is_episode) {
         this.movie.nativeElement.classList.add("movie_hover");
         this.play_button.nativeElement.classList.remove("display_none")
         this.play_button.nativeElement.classList.add("animation-show")
@@ -52,7 +52,7 @@ export class MovieContinuarViendoComponent {
 
     this.movie.nativeElement
     .addEventListener('mouseout', () => {
-      if (this.show_progression_bar) {
+      if (this.show_progression_bar || this.is_episode) {
         this.play_button.nativeElement.classList.remove("animation-show")
         this.movie.nativeElement.classList.remove("movie_hover"),
         this.play_button.nativeElement.classList.add("display_none")

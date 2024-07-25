@@ -16,6 +16,7 @@ body {
 }
 
 .title-and-description {
+    width: 200px;
     z-index: 2;
     position: absolute;
     margin-left: 50px;
@@ -183,6 +184,7 @@ mat-spinner {
 
 .container-episodios {
     margin-left: 40px;
+    margin-bottom: 30px;
 }
 
 .container-episodios button {
@@ -236,6 +238,7 @@ mat-spinner {
         grid-row-start: 1;
         grid-column-start: 1;
         display: block;
+        opacity: .6;
     }
     
     .mobile-image-movie-container img {
@@ -254,10 +257,11 @@ mat-spinner {
 
     .title-and-description h1 {
         font-size: 34px;
+        width: 220px;
     }
 
     .title-and-description p {
-        font-size: 17px;
+        /* font-size: 17px; */
     }
 
     .btn-reproducir {
@@ -295,7 +299,7 @@ mat-spinner {
 
     .blur-filter {
         align-self: flex-start;
-        height: 200px;
+        height: 400px;
         width: 70vw;
     }
 
@@ -318,10 +322,14 @@ mat-spinner {
 
     .container-episodios h1 {
         font-size: 26px;
+        width: fit-content;
     }
 
     .episodios {
-        /* flex-wrap: wrap; */
+        /* margin-bottom: 30px; */
+        width: 90vw;
+        height: 300px;
+        overflow-x: scroll;
     }
 
 }

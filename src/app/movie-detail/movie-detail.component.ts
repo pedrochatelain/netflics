@@ -11,6 +11,9 @@ export class MovieDetailComponent {
   @ViewChild("container_add_favorites")
   container_add_favorites!: ElementRef;
   
+  @ViewChild("btn_add_favorites")
+  btn_add_favorites!: ElementRef;
+  
   @ViewChild("container_loading")
   container_loading!: ElementRef;
   
@@ -53,7 +56,7 @@ export class MovieDetailComponent {
   }
 
   ngAfterViewInit() {
-    this.container_add_favorites.nativeElement.addEventListener('click', () => {
+    this.btn_add_favorites.nativeElement.addEventListener('click', () => {
       this.container_add_favorites.nativeElement.classList.add('display-none')
       this.container_loading.nativeElement.classList.remove('display-none')
       setTimeout(() => {

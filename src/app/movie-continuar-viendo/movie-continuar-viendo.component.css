@@ -146,8 +146,8 @@ p {
 
 @media (max-width: 800px) {
     body, #movie-image {
-        width: 42vw;
-        height: 24vh;
+        width: 230px;
+        height: 150px;
         margin-right: 0;
     }
 
