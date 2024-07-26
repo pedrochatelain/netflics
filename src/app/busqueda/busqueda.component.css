@@ -12,7 +12,18 @@ body {
     height: fit-content;
 }
 
+.btn-clear-text {
+    transform: scale(1.8);
+    align-self: center;
+    width: 32px;
+}
+
+.btn-clear-text:hover {
+    cursor: pointer;
+}
+
 .container-buscador {
+    padding-right: 20px;
     display: flex;
     justify-content: center;
     background-color: hsl(0, 0%, 12%);
@@ -208,6 +219,7 @@ mat-spinner {
     .buscador {
         height: 60px;
         font-size: 20px;
+        padding-left: 15px;
     }
 
     .btn-activar-filtros p {
@@ -220,15 +232,15 @@ mat-spinner {
 
     .container-filtros {
         flex-wrap: wrap;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
         margin-top: 10px;
     }
 
     .filtro {
         padding: 4px;
         margin: 0;
-        margin-right: 20px;
+        margin-right: 10px;
         margin-bottom: 10px;
         /* width: 120px; */
     }
@@ -239,5 +251,14 @@ mat-spinner {
 
     .filtro p {
         /* font-size: 10px; */
+    }
+
+    .filtro:hover {
+        border: 1px solid #2F88FF;
+    }
+
+    .btn-clear-text {
+        transform: scale(1);
+    
     }
 }
