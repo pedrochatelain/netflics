@@ -136,7 +136,7 @@ p {
 }
 
 .title-episode-description {
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .episode-description {
@@ -144,11 +144,30 @@ p {
     width: 300px; */
 }
 
+.title-movie {
+    font-size: 18px;
+    margin: 0;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.text-remaining-time {
+    font-size: 13px;
+}
+
 @media (max-width: 800px) {
+    body {
+        margin-bottom: 10px;
+
+    }
+    
     body, #movie-image {
         width: 230px;
-        height: 150px;
         margin-right: 0;
+    }
+    
+    #movie-image {
+        height: 150px;
     }
 
     h1 {
@@ -166,5 +185,9 @@ p {
 
     #progression-bar {
         height: 6px;
+    }
+
+    .title-movie {
+        margin-left: 4px;
     }
 }

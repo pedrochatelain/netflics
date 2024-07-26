@@ -6,7 +6,22 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
   styleUrls: ['./continuar-viendo.component.css']
 })
 export class ContinuarViendoComponent {
+  
+  @Input()
+  title_movie_one: String = '';
 
+  @Input()
+  title_movie_two: String = '';
+
+  @Input()
+  title_movie_three: String = '';
+
+  @Input()
+  title_movie_four: String = '';
+
+  @Input()
+  title_movie_five: String = '';
+  
   @Input()
   title: String = "Continuar viendo"
   
@@ -14,23 +29,27 @@ export class ContinuarViendoComponent {
   continuar_viendo: boolean = true;
 
   @Input()
-  src_movie_one: String = '';
+  is_episode: boolean = false;
 
+  @Input()
+  src_movie_one: String = '';
+  
+  
   @Input()
   src_movie_two: String = '';
-
+  
   @Input()
   src_movie_three: String = '';
-
+  
   @Input()
   src_movie_four: String = '';
-
+  
   @Input()
   src_movie_five: String = '';
-
+  
   @Input()
   is_watching: boolean = false;
-
+  
   @ViewChild("container_show_more")
   container_show_more!: ElementRef;
   

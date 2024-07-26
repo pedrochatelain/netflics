@@ -24,9 +24,15 @@ export class MovieContinuarViendoComponent {
 
   @Input()
   is_episode: boolean = false;
+  
+  @Input()
+  is_continue_watching: boolean = false;
 
   @Input()
   episode_description: String = ''
+
+  @Input()
+  title: String = ''
 
   ngAfterViewInit() {
     if (window.innerWidth <= 800 && this.show_progression_bar) {

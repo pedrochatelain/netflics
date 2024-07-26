@@ -1,7 +1,7 @@
 body {
     display: grid;
     /* height: 300px; */
-    /* margin-top: 20px; */
+    margin-top: 30px;
     /* margin-bottom: 50px; */
 }
 
@@ -16,7 +16,7 @@ h1 {
     padding-left: 60px;
     /* margin-left: 20px; */
     display: flex;
-    height: 250px;
+    height: fit-content;
     /* width: 100%; */
     /* width: 94vw; */
     overflow-x: hidden;
@@ -73,24 +73,20 @@ h1 {
 
 @media (max-width: 800px) {
 
-    body {
-        height: 250px;
-    }
-
     h1 {
         height: fit-content;
-        margin-top: 40px;
+        /* margin-top: 40px; */
         margin-bottom: 0;
         font-size: 20px;
         margin-left: 35px;
     }
 
     .container-movies {
-        margin-top: 70px;
+        margin-top: 40px;
         margin-left: 32px;
         padding-left: 0;
         overflow-x: scroll;
-        height: 190px;
+        height: fit-content;
     }
 
     .container-show-less, .container-show-more {

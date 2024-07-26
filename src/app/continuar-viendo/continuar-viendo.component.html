@@ -8,14 +8,19 @@
                 image="{{src_movie_one == '' ? 'assets/toystory.png' : src_movie_one}}"
                 [show_progression_bar] = "continuar_viendo ? true : false"
                 [show_remaining_time]= "continuar_viendo ? true : false"
+                [is_continue_watching]=  is_watching
+                title="{{title_movie_one}}"
+                [is_episode] = is_episode
             ></app-movie-continuar-viendo>
         </div>
         
         <div class="app-continuar-viendo" [routerLink]="is_watching ? ['/watch'] : []">
             <app-movie-continuar-viendo
-                image="{{src_movie_two == '' ? 'assets/monsters_inc.png' : src_movie_two}}"
+                image="{{src_movie_two == '' ? 'assets/toystory.png' : src_movie_two}}"
                 [show_progression_bar] = "continuar_viendo ? true : false"
                 [show_remaining_time]= "continuar_viendo ? true : false"
+                [is_continue_watching]=  is_watching
+                title="{{title_movie_two}}"
             ></app-movie-continuar-viendo>
         </div>
 
@@ -24,6 +29,8 @@
                 image="{{src_movie_three == '' ? 'assets/ratatouille.png' : src_movie_three}}"
                 [show_progression_bar] = "continuar_viendo ? true : false"
                 [show_remaining_time]= "continuar_viendo ? true : false"
+                [is_continue_watching]=  is_watching
+                title="{{title_movie_three}}"
             ></app-movie-continuar-viendo>
         </div>
 
@@ -32,6 +39,8 @@
                 image="{{src_movie_four == '' ? 'assets/bugs_life.jfif' : src_movie_four}}"
                 [show_progression_bar] = "continuar_viendo ? true : false"
                 [show_remaining_time]= "continuar_viendo ? true : false"
+                [is_continue_watching]=  is_watching
+                title="{{title_movie_four}}"
             ></app-movie-continuar-viendo>
         </div>
         
@@ -40,6 +49,8 @@
                 image="{{src_movie_five == '' ? 'assets/cars.webp' : src_movie_five}}"
                 [show_progression_bar] = "continuar_viendo ? true : false"
                 [show_remaining_time]= "continuar_viendo ? true : false"
+                [is_continue_watching]=  is_watching
+                title="{{title_movie_five}}"
             ></app-movie-continuar-viendo>
         </div>
     
